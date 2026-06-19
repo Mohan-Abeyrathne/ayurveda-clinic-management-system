@@ -66,5 +66,10 @@ namespace clinicManagement
         {
 
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            login_password.UseSystemPasswordChar = !login_showPass.Checked;
+        }
     }
 }
