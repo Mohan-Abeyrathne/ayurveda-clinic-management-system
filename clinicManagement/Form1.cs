@@ -29,6 +29,47 @@ namespace clinicManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
+            String username = login_username.Text.Trim();
+            String password = login_password.Text.Trim();
+
+            // check usernames and passwords for the users login
+
+            if (username == "admin" && password == "admin123")
+            {
+                MessageBox.Show("Login successful! Opening Admin Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                AdminDashboard adminPanel = new AdminDashboard();
+
+                adminPanel.Show();
+
+                this.Hide();
+            }
+            else if(username == "staff" && password == "staff123")
+            {
+                MessageBox.Show("Login successful! Opening Staff Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                StaffDashboard staffPanel = new StaffDashboard();
+
+                staffPanel.Show();
+                this.Hide();
+
+            }
+            else if(username == "doctor" && password == "doc123")
+            {
+                MessageBox.Show("Login successful! Opening Doctor Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                DoctorDashboard doctorPanel = new DoctorDashboard();
+
+                doctorPanel.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("Incorrect username or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                login_password.Clear();
+            }
 
         }
 
