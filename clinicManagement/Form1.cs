@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace clinicManagement
 {
@@ -29,47 +31,115 @@ namespace clinicManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String username = login_username.Text.Trim();
-            String password = login_password.Text.Trim();
+            // User inputs
+            string inputUser = login_username.Text.Trim();
+            string inputPassword = login_password.Text.Trim();
+
+            string connectionString = "Server=localhost;Database=ClinicManagement;Uid=root;Pwd=;";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT FullName, UserRole FROM users WHERE UserName = @user AND Password = @pass";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@user", inputUser);
+                        cmd.Parameters.AddWithValue("@pass", inputPassword);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string fullName = reader["FullName"].ToString();
+                                string role = reader["UserRole"].ToString();
+
+                                // Base variable
+                                User loggedInUser = null;
+
+                                // Check for the role and open the correct dashboard panel
+                                if (role == "admin")
+                                {
+                                    loggedInUser = new Admin(inputUser, fullName);
+                                    MessageBox.Show($"Welcome, : {loggedInUser.FullName}!", "Login Success");
+
+                                    AdminDashboard adminPanel = new AdminDashboard();
+                                    adminPanel.Show();
+                                }
+                                else if (role == "doctor")
+                                {
+                                    loggedInUser = new Doctor(inputUser, fullName);
+                                    MessageBox.Show($"Welcome, . {loggedInUser.FullName}!", "Login Success");
+
+                                    DoctorDashboard doctorPanel = new DoctorDashboard();
+                                    doctorPanel.Show();
+                                }
+                                else if (role == "staff")
+                                {
+                                    loggedInUser = new Staff(inputUser, fullName);
+                                    MessageBox.Show($"Welcome, Staff: {loggedInUser.FullName}!", "Login Success");
+
+                                    StaffDashboard staffPanel = new StaffDashboard();
+                                    staffPanel.Show();
+                                }
+
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid Username or Password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                login_password.Clear();
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Database connection failed! Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
 
             // check usernames and passwords for the users login
 
-            if (username == "admin" && password == "admin123")
-            {
-                MessageBox.Show("Login successful! Opening Admin Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //if (username == "admin" && password == "admin123")
+            //{
+            //    MessageBox.Show("Login successful! Opening Admin Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                AdminDashboard adminPanel = new AdminDashboard();
+            //    AdminDashboard adminPanel = new AdminDashboard();
 
-                adminPanel.Show();
+            //    adminPanel.Show();
 
-                this.Hide();
-            }
-            else if(username == "staff" && password == "staff123")
-            {
-                MessageBox.Show("Login successful! Opening Staff Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    this.Hide();
+            //}
+            //else if(username == "staff" && password == "staff123")
+            //{
+            //    MessageBox.Show("Login successful! Opening Staff Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                StaffDashboard staffPanel = new StaffDashboard();
+            //    StaffDashboard staffPanel = new StaffDashboard();
 
-                staffPanel.Show();
-                this.Hide();
+            //    staffPanel.Show();
+            //    this.Hide();
 
-            }
-            else if(username == "doctor" && password == "doc123")
-            {
-                MessageBox.Show("Login successful! Opening Doctor Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //else if(username == "doctor" && password == "doc123")
+            //{
+            //    MessageBox.Show("Login successful! Opening Doctor Dashboard...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                DoctorDashboard doctorPanel = new DoctorDashboard();
+            //    DoctorDashboard doctorPanel = new DoctorDashboard();
 
-                doctorPanel.Show();
-                this.Hide();
+            //    doctorPanel.Show();
+            //    this.Hide();
 
-            }
-            else
-            {
-                MessageBox.Show("Incorrect username or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Incorrect username or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                login_password.Clear();
-            }
+            //    login_password.Clear();
+            //}
 
         }
 
