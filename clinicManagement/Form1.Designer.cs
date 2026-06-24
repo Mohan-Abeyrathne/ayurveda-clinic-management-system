@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.login_showPass = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.login_btn = new System.Windows.Forms.Button();
             this.login_password = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.login_showPass = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +58,17 @@
             this.panel1.Size = new System.Drawing.Size(352, 388);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // login_showPass
+            // 
+            this.login_showPass.AutoSize = true;
+            this.login_showPass.Location = new System.Drawing.Point(193, 254);
+            this.login_showPass.Name = "login_showPass";
+            this.login_showPass.Size = new System.Drawing.Size(125, 20);
+            this.login_showPass.TabIndex = 7;
+            this.login_showPass.Text = "Show Password";
+            this.login_showPass.UseVisualStyleBackColor = true;
+            this.login_showPass.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label4
             // 
@@ -147,24 +158,15 @@
             this.label1.Text = "Login Account";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // login_showPass
-            // 
-            this.login_showPass.AutoSize = true;
-            this.login_showPass.Location = new System.Drawing.Point(193, 254);
-            this.login_showPass.Name = "login_showPass";
-            this.login_showPass.Size = new System.Drawing.Size(125, 20);
-            this.login_showPass.TabIndex = 7;
-            this.login_showPass.Text = "Show Password";
-            this.login_showPass.UseVisualStyleBackColor = true;
-            this.login_showPass.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::clinicManagement.Properties.Resources.Screenshot_2026_06_18_184049;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(710, 462);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

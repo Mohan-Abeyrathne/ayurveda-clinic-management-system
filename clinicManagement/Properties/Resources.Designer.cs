@@ -73,6 +73,16 @@ namespace clinicManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_admin_panel {
+            get {
+                object obj = ResourceManager.GetObject("bg-admin-panel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_removebg_preview__43_ {
             get {
                 object obj = ResourceManager.GetObject("image-removebg-preview (43)", resourceCulture);
@@ -86,6 +96,16 @@ namespace clinicManagement.Properties {
         internal static System.Drawing.Bitmap image_removebg_preview__43_1 {
             get {
                 object obj = ResourceManager.GetObject("image-removebg-preview (43)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_removebg_preview__44_ {
+            get {
+                object obj = ResourceManager.GetObject("image-removebg-preview (44)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
