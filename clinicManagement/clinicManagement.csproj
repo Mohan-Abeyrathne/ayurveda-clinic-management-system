@@ -102,6 +102,12 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardHomeForm.Designer.cs">
+      <DependentUpon>DashboardHomeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor.cs" />
     <Compile Include="DoctorDashboard.cs">
       <SubType>Form</SubType>
@@ -127,6 +133,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardHomeForm.resx">
+      <DependentUpon>DashboardHomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorDashboard.resx">
       <DependentUpon>DoctorDashboard.cs</DependentUpon>
@@ -184,6 +193,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bg-admin-panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-navbar-admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-navbar-admin %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-dp-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-navbar-admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-bg-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medi-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-bg-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff-cd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc-cd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medi-cd1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

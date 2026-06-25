@@ -13,6 +13,7 @@ namespace clinicManagement
     public partial class AdminDashboard : Form
     {
         private bool isLoggingOut = false; // flag for login
+        private Form activeForm = null;
         public AdminDashboard()
         {
             InitializeComponent();
@@ -44,7 +45,7 @@ namespace clinicManagement
         private void btnLogout_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation",
-                                                  MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                                      MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
@@ -76,7 +77,54 @@ namespace clinicManagement
 
         }
 
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
 
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+
+            pnlMainContent.Controls.Add(childForm);
+            pnlMainContent.Tag = childForm;
+
+            childForm.BringToFront();
+
+            childForm.Show();
+        }
+
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DashboardHomeForm());
+
+        }
+
+        private void btnManageDoctors_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManageStaff_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
