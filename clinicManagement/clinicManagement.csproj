@@ -119,6 +119,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageDoctorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDoctorsForm.Designer.cs">
+      <DependentUpon>ManageDoctorsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaffDashboard.cs">
@@ -126,6 +132,18 @@
     </Compile>
     <Compile Include="StaffDashboard.Designer.cs">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AddDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AddDoctor.Designer.cs">
+      <DependentUpon>UC_AddDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SearchModifyDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SearchModifyDoctor.Designer.cs">
+      <DependentUpon>UC_SearchModifyDoctor.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AdminDashboard.resx">
@@ -140,6 +158,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageDoctorsForm.resx">
+      <DependentUpon>ManageDoctorsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -152,6 +173,12 @@
     </Compile>
     <EmbeddedResource Include="StaffDashboard.resx">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AddDoctor.resx">
+      <DependentUpon>UC_AddDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SearchModifyDoctor.resx">
+      <DependentUpon>UC_SearchModifyDoctor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

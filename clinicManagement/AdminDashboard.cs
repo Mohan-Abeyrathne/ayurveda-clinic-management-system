@@ -108,6 +108,9 @@ namespace clinicManagement
 
         private void btnManageDoctors_Click(object sender, EventArgs e)
         {
+            ManageDoctorsForm manageDocsPopup = new ManageDoctorsForm();
+
+            manageDocsPopup.ShowDialog(this);
 
         }
 
