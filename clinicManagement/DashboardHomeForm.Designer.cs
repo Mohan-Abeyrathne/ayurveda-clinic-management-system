@@ -31,12 +31,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblPatientTitle = new System.Windows.Forms.Label();
             this.lblTotalPatientsCount = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblDoctorTitle = new System.Windows.Forms.Label();
             this.lblTotalDoctorsCount = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblStaffTitle = new System.Windows.Forms.Label();
             this.lblTotalStaffCount = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblInventoryTitle = new System.Windows.Forms.Label();
             this.lblLowStockCount = new System.Windows.Forms.Label();
@@ -55,6 +59,8 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.lblPatientTitle);
             this.panel1.Controls.Add(this.lblTotalPatientsCount);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(82, 35);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 325);
@@ -75,14 +81,39 @@
             // 
             this.lblTotalPatientsCount.AutoSize = true;
             this.lblTotalPatientsCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalPatientsCount.Font = new System.Drawing.Font("Sitka Banner", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPatientsCount.ForeColor = System.Drawing.Color.Blue;
-            this.lblTotalPatientsCount.Location = new System.Drawing.Point(71, 184);
+            this.lblTotalPatientsCount.Font = new System.Drawing.Font("Sitka Banner", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPatientsCount.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalPatientsCount.Location = new System.Drawing.Point(128, 206);
             this.lblTotalPatientsCount.Name = "lblTotalPatientsCount";
-            this.lblTotalPatientsCount.Size = new System.Drawing.Size(80, 116);
+            this.lblTotalPatientsCount.Size = new System.Drawing.Size(61, 87);
             this.lblTotalPatientsCount.TabIndex = 0;
             this.lblTotalPatientsCount.Text = "1";
             this.lblTotalPatientsCount.Click += new System.EventHandler(this.lblTotalPatientsCount_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Sitka Banner", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(76, 206);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 87);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "0";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Sitka Banner", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(23, 206);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 87);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "0";
             // 
             // panel2
             // 
@@ -92,6 +123,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.lblDoctorTitle);
             this.panel2.Controls.Add(this.lblTotalDoctorsCount);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(382, 35);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(225, 326);
@@ -112,14 +144,27 @@
             // 
             this.lblTotalDoctorsCount.AutoSize = true;
             this.lblTotalDoctorsCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalDoctorsCount.Font = new System.Drawing.Font("Sitka Banner", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalDoctorsCount.ForeColor = System.Drawing.Color.Green;
-            this.lblTotalDoctorsCount.Location = new System.Drawing.Point(71, 189);
+            this.lblTotalDoctorsCount.Font = new System.Drawing.Font("Sitka Banner", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalDoctorsCount.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalDoctorsCount.Location = new System.Drawing.Point(105, 206);
             this.lblTotalDoctorsCount.Name = "lblTotalDoctorsCount";
-            this.lblTotalDoctorsCount.Size = new System.Drawing.Size(90, 116);
+            this.lblTotalDoctorsCount.Size = new System.Drawing.Size(67, 87);
             this.lblTotalDoctorsCount.TabIndex = 1;
             this.lblTotalDoctorsCount.Text = "2";
             this.lblTotalDoctorsCount.Click += new System.EventHandler(this.lblTotalDoctorsCount_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Sitka Banner", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(58, 206);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 87);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "0";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel3
             // 
@@ -129,6 +174,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.lblStaffTitle);
             this.panel3.Controls.Add(this.lblTotalStaffCount);
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(684, 36);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(226, 325);
@@ -149,14 +195,26 @@
             // 
             this.lblTotalStaffCount.AutoSize = true;
             this.lblTotalStaffCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalStaffCount.Font = new System.Drawing.Font("Sitka Banner", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalStaffCount.ForeColor = System.Drawing.Color.Green;
-            this.lblTotalStaffCount.Location = new System.Drawing.Point(73, 188);
+            this.lblTotalStaffCount.Font = new System.Drawing.Font("Sitka Banner", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalStaffCount.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalStaffCount.Location = new System.Drawing.Point(114, 215);
             this.lblTotalStaffCount.Name = "lblTotalStaffCount";
-            this.lblTotalStaffCount.Size = new System.Drawing.Size(89, 116);
+            this.lblTotalStaffCount.Size = new System.Drawing.Size(67, 87);
             this.lblTotalStaffCount.TabIndex = 1;
             this.lblTotalStaffCount.Text = "3";
             this.lblTotalStaffCount.Click += new System.EventHandler(this.lblTotalStaffCount_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Sitka Banner", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(64, 215);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 87);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "0";
             // 
             // panel4
             // 
@@ -187,11 +245,11 @@
             // 
             this.lblLowStockCount.AutoSize = true;
             this.lblLowStockCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblLowStockCount.Font = new System.Drawing.Font("Sitka Banner", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLowStockCount.Font = new System.Drawing.Font("Sitka Banner", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLowStockCount.ForeColor = System.Drawing.Color.Red;
-            this.lblLowStockCount.Location = new System.Drawing.Point(74, 186);
+            this.lblLowStockCount.Location = new System.Drawing.Point(76, 196);
             this.lblLowStockCount.Name = "lblLowStockCount";
-            this.lblLowStockCount.Size = new System.Drawing.Size(77, 97);
+            this.lblLowStockCount.Size = new System.Drawing.Size(69, 87);
             this.lblLowStockCount.TabIndex = 1;
             this.lblLowStockCount.Text = "4";
             // 
@@ -256,5 +314,9 @@
         private System.Windows.Forms.Label lblInventoryTitle;
         private System.Windows.Forms.Label lblLowStockCount;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

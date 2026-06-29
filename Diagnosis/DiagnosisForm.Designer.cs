@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -126,8 +126,8 @@
             // 
             // dgvDiagnosis
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
-            this.dgvDiagnosis.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray;
+            this.dgvDiagnosis.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDiagnosis.BackgroundColor = System.Drawing.Color.White;
             this.dgvDiagnosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -207,6 +207,7 @@
             this.btnSearch.TabIndex = 33;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
             // 
             // txtPatientName
             // 
@@ -273,6 +274,7 @@
             this.txtSymptoms.Name = "txtSymptoms";
             this.txtSymptoms.Size = new System.Drawing.Size(396, 61);
             this.txtSymptoms.TabIndex = 26;
+            this.txtSymptoms.TextChanged += new System.EventHandler(this.txtSymptoms_TextChanged);
             // 
             // txtPatientID
             // 
@@ -281,6 +283,7 @@
             this.txtPatientID.Name = "txtPatientID";
             this.txtPatientID.Size = new System.Drawing.Size(396, 27);
             this.txtPatientID.TabIndex = 25;
+            this.txtPatientID.TextChanged += new System.EventHandler(this.txtPatientID_TextChanged);
             // 
             // label8
             // 
