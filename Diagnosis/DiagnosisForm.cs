@@ -364,7 +364,7 @@ Note: This is an automatically generated electronic report file.";
             }
         }
 
-        private void dgvDiagnosis_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void  dgvDiagnosis_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
