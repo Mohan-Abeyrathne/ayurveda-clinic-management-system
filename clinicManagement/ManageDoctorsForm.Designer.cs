@@ -81,6 +81,7 @@
             this.btnSearchView.TabIndex = 1;
             this.btnSearchView.Text = "🔍 Search and Modify";
             this.btnSearchView.UseVisualStyleBackColor = true;
+            this.btnSearchView.Click += new System.EventHandler(this.btnSearchView_Click);
             // 
             // btnAddDoctorView
             // 

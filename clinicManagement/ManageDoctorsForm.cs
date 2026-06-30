@@ -49,5 +49,15 @@ namespace clinicManagement
             addDocView.BringToFront();
 
         }
+
+        private void btnSearchView_Click(object sender, EventArgs e)
+        {
+            panelRight.Controls.Clear();
+            UC_SearchModifyDoctor searchView = new UC_SearchModifyDoctor();
+            searchView.Dock = DockStyle.Fill;
+            panelRight.Controls.Add(searchView);
+            searchView.BringToFront();
+
+        }
     }
 }
