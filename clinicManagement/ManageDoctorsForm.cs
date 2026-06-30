@@ -29,7 +29,7 @@ namespace clinicManagement
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void panelRight_Paint(object sender, PaintEventArgs e)
@@ -58,6 +58,15 @@ namespace clinicManagement
             panelRight.Controls.Add(searchView);
             searchView.BringToFront();
 
+        }
+
+        private void btnViewAllView_Click(object sender, EventArgs e)
+        {
+            panelRight.Controls.Clear();
+            UC_ViewAllDoctors viewAllGrid = new UC_ViewAllDoctors();
+            viewAllGrid.Dock = DockStyle.Fill;
+            panelRight.Controls.Add(viewAllGrid);
+            viewAllGrid.BringToFront();
         }
     }
 }

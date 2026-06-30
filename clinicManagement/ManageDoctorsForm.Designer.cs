@@ -71,6 +71,7 @@
             this.btnViewAllView.TabIndex = 2;
             this.btnViewAllView.Text = "📋 View All Doctors";
             this.btnViewAllView.UseVisualStyleBackColor = true;
+            this.btnViewAllView.Click += new System.EventHandler(this.btnViewAllView_Click);
             // 
             // btnSearchView
             // 

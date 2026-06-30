@@ -37,7 +37,6 @@
             this.txtEditLicense = new System.Windows.Forms.TextBox();
             this.txtEditSpecialization = new System.Windows.Forms.TextBox();
             this.txtEditExperience = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtSearchName = new System.Windows.Forms.TextBox();
             this.btnDeleteDoctor = new System.Windows.Forms.Button();
             this.btnUpdateDoctor = new System.Windows.Forms.Button();
@@ -133,13 +132,6 @@
             this.txtEditExperience.TabIndex = 9;
             this.txtEditExperience.TextChanged += new System.EventHandler(this.txtEditExperience_TextChanged);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(-19, -19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 10;
-            // 
             // txtSearchName
             // 
             this.txtSearchName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -214,7 +206,6 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSearchName);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgvDoctorSearchList);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -240,7 +231,6 @@
         private System.Windows.Forms.TextBox txtEditLicense;
         private System.Windows.Forms.TextBox txtEditSpecialization;
         private System.Windows.Forms.TextBox txtEditExperience;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtSearchName;
         private System.Windows.Forms.Button btnDeleteDoctor;
         private System.Windows.Forms.Button btnUpdateDoctor;

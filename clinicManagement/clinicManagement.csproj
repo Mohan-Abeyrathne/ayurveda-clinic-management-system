@@ -145,6 +145,12 @@
     <Compile Include="UC_SearchModifyDoctor.Designer.cs">
       <DependentUpon>UC_SearchModifyDoctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_ViewAllDoctors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ViewAllDoctors.Designer.cs">
+      <DependentUpon>UC_ViewAllDoctors.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_SearchModifyDoctor.resx">
       <DependentUpon>UC_SearchModifyDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ViewAllDoctors.resx">
+      <DependentUpon>UC_ViewAllDoctors.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
