@@ -116,7 +116,9 @@ namespace clinicManagement
 
         private void btnManageStaff_Click(object sender, EventArgs e)
         {
+            ManageStaffForm manageStaffPopup = new ManageStaffForm();
 
+            manageStaffPopup.ShowDialog(this);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

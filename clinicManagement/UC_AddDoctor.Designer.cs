@@ -233,22 +233,32 @@
             // 
             // btnSaveDoctor
             // 
+            this.btnSaveDoctor.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSaveDoctor.FlatAppearance.BorderSize = 0;
+            this.btnSaveDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveDoctor.Location = new System.Drawing.Point(588, 653);
             this.btnSaveDoctor.Name = "btnSaveDoctor";
             this.btnSaveDoctor.Size = new System.Drawing.Size(122, 47);
             this.btnSaveDoctor.TabIndex = 3;
             this.btnSaveDoctor.Text = "Save";
-            this.btnSaveDoctor.UseVisualStyleBackColor = true;
+            this.btnSaveDoctor.UseVisualStyleBackColor = false;
             this.btnSaveDoctor.Click += new System.EventHandler(this.btnSaveDoctor_Click);
             // 
             // btnClearFields
             // 
+            this.btnClearFields.BackColor = System.Drawing.Color.LightGray;
+            this.btnClearFields.FlatAppearance.BorderSize = 0;
+            this.btnClearFields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearFields.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearFields.ForeColor = System.Drawing.Color.Red;
+            this.btnClearFields.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClearFields.Location = new System.Drawing.Point(437, 653);
             this.btnClearFields.Name = "btnClearFields";
             this.btnClearFields.Size = new System.Drawing.Size(122, 47);
             this.btnClearFields.TabIndex = 4;
             this.btnClearFields.Text = "Clear All";
-            this.btnClearFields.UseVisualStyleBackColor = true;
+            this.btnClearFields.UseVisualStyleBackColor = false;
             this.btnClearFields.Click += new System.EventHandler(this.btnClearFields_Click);
             // 
             // UC_AddDoctor
