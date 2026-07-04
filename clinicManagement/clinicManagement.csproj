@@ -64,6 +64,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatientFileViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientFileViewer.Designer.cs">
+      <DependentUpon>PatientFileViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaffDashboard.cs">
