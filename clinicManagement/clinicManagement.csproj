@@ -204,6 +204,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PatientProfileForm.resx">
       <DependentUpon>PatientProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageDoctorsForm.resx">
       <DependentUpon>ManageDoctorsForm.cs</DependentUpon>
     </EmbeddedResource>
