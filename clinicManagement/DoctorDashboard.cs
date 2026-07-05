@@ -15,6 +15,8 @@ namespace clinicManagement
         public DoctorDashboard()
         {
             InitializeComponent();
+            this.MinimizeBox = false;
+            this.MaximizeBox = false;
         }
 
         private void DoctorDashboard_FormClosed(object sender, FormClosedEventArgs e)
