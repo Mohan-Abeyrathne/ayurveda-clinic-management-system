@@ -32,7 +32,7 @@ namespace clinicManagement
         private void btnPatientFiles_Click(object sender, EventArgs e)
         {
             PatientFileViewer viewer = new PatientFileViewer();
-            viewer.ShowDialog();
+            viewer.Show();
         }
     }
 }
