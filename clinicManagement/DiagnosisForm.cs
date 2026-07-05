@@ -32,7 +32,6 @@ namespace clinicManagement
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Field Validation
             if (string.IsNullOrWhiteSpace(txtPatientID.Text))
             {
                 MessageBox.Show("Please search and load a valid Patient record first.", "Validation Error");
