@@ -33,6 +33,7 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvPatients = new System.Windows.Forms.DataGridView();
             this.btnViewProfile = new System.Windows.Forms.Button();
+            this.btnClose1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPatients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +95,7 @@
             this.btnViewProfile.BackColor = System.Drawing.Color.Honeydew;
             this.btnViewProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnViewProfile.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewProfile.Location = new System.Drawing.Point(507, 501);
+            this.btnViewProfile.Location = new System.Drawing.Point(314, 494);
             this.btnViewProfile.Name = "btnViewProfile";
             this.btnViewProfile.Size = new System.Drawing.Size(332, 39);
             this.btnViewProfile.TabIndex = 4;
@@ -102,11 +103,25 @@
             this.btnViewProfile.UseVisualStyleBackColor = false;
             this.btnViewProfile.Click += new System.EventHandler(this.btnViewProfile_Click);
             // 
+            // btnClose1
+            // 
+            this.btnClose1.BackColor = System.Drawing.Color.Honeydew;
+            this.btnClose1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose1.Location = new System.Drawing.Point(666, 494);
+            this.btnClose1.Name = "btnClose1";
+            this.btnClose1.Size = new System.Drawing.Size(332, 39);
+            this.btnClose1.TabIndex = 5;
+            this.btnClose1.Text = "Close";
+            this.btnClose1.UseVisualStyleBackColor = false;
+            this.btnClose1.Click += new System.EventHandler(this.btnClose1_Click);
+            // 
             // PatientFileViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1286, 687);
+            this.Controls.Add(this.btnClose1);
             this.Controls.Add(this.btnViewProfile);
             this.Controls.Add(this.dgvPatients);
             this.Controls.Add(this.btnSearch);
@@ -128,5 +143,6 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvPatients;
         private System.Windows.Forms.Button btnViewProfile;
+        private System.Windows.Forms.Button btnClose1;
     }
 }

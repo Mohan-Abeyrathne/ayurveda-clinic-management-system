@@ -103,5 +103,10 @@ namespace clinicManagement
                 DisplayInfo(ex.Message, "Search Error"); //Polymorphism
             }
         }
+
+        private void btnClose1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
