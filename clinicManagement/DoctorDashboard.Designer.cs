@@ -40,73 +40,78 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(745, 27);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Honeydew;
+            this.label1.Location = new System.Drawing.Point(252, 126);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 20);
+            this.label1.Size = new System.Drawing.Size(809, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to the Doctor Dashboard!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnPatientFiles
             // 
-            this.btnPatientFiles.BackColor = System.Drawing.Color.Honeydew;
-            this.btnPatientFiles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPatientFiles.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPatientFiles.Location = new System.Drawing.Point(200, 223);
+            this.btnPatientFiles.BackColor = System.Drawing.Color.Transparent;
+            this.btnPatientFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPatientFiles.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPatientFiles.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnPatientFiles.Location = new System.Drawing.Point(115, 241);
             this.btnPatientFiles.Name = "btnPatientFiles";
-            this.btnPatientFiles.Size = new System.Drawing.Size(119, 36);
+            this.btnPatientFiles.Size = new System.Drawing.Size(243, 52);
             this.btnPatientFiles.TabIndex = 1;
-            this.btnPatientFiles.Text = "Patient Files";
+            this.btnPatientFiles.Text = "View Patient Files";
             this.btnPatientFiles.UseVisualStyleBackColor = false;
             this.btnPatientFiles.Click += new System.EventHandler(this.btnPatientFiles_Click);
             // 
             // btnDiagnosis
             // 
-            this.btnDiagnosis.BackColor = System.Drawing.Color.Honeydew;
-            this.btnDiagnosis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDiagnosis.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiagnosis.ForeColor = System.Drawing.Color.Black;
-            this.btnDiagnosis.Location = new System.Drawing.Point(382, 223);
+            this.btnDiagnosis.BackColor = System.Drawing.Color.Transparent;
+            this.btnDiagnosis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiagnosis.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiagnosis.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnDiagnosis.Location = new System.Drawing.Point(383, 241);
             this.btnDiagnosis.Name = "btnDiagnosis";
-            this.btnDiagnosis.Size = new System.Drawing.Size(119, 36);
+            this.btnDiagnosis.Size = new System.Drawing.Size(243, 52);
             this.btnDiagnosis.TabIndex = 2;
             this.btnDiagnosis.Text = "Diagnosis";
             this.btnDiagnosis.UseVisualStyleBackColor = false;
             // 
             // btnPrescription
             // 
-            this.btnPrescription.BackColor = System.Drawing.Color.Honeydew;
-            this.btnPrescription.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPrescription.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrescription.Location = new System.Drawing.Point(572, 223);
+            this.btnPrescription.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrescription.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrescription.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrescription.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnPrescription.Location = new System.Drawing.Point(652, 241);
             this.btnPrescription.Name = "btnPrescription";
-            this.btnPrescription.Size = new System.Drawing.Size(118, 36);
+            this.btnPrescription.Size = new System.Drawing.Size(243, 52);
             this.btnPrescription.TabIndex = 3;
-            this.btnPrescription.Text = "Prescription";
+            this.btnPrescription.Text = "Prescriptions";
             this.btnPrescription.UseVisualStyleBackColor = false;
             // 
             // btnLogOut
             // 
-            this.btnLogOut.BackColor = System.Drawing.Color.Honeydew;
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogOut.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Location = new System.Drawing.Point(545, 353);
+            this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnLogOut.Location = new System.Drawing.Point(1146, 23);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(103, 36);
+            this.btnLogOut.Size = new System.Drawing.Size(112, 34);
             this.btnLogOut.TabIndex = 4;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Honeydew;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(775, 223);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Honeydew;
+            this.button1.Location = new System.Drawing.Point(919, 241);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 60);
+            this.button1.Size = new System.Drawing.Size(243, 52);
             this.button1.TabIndex = 5;
             this.button1.Text = "Therapy Shedules Management";
             this.button1.UseVisualStyleBackColor = false;
@@ -116,7 +121,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1198, 673);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1284, 719);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnPrescription);
