@@ -34,5 +34,13 @@ namespace clinicManagement
             PatientFileViewer viewer = new PatientFileViewer();
             viewer.Show();
         }
+
+        private void btnDiagnosis_Click(object sender, EventArgs e)
+        {
+            DiagnosisForm diagnosisWindow = new DiagnosisForm();
+
+            // 2. Display the form model on screen instantly 
+            diagnosisWindow.Show();
+        }
     }
 }
