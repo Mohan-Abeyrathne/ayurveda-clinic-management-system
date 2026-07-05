@@ -107,6 +107,13 @@
     <Compile Include="DashboardHomeForm.Designer.cs">
       <DependentUpon>DashboardHomeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database\DBConnection.cs" />
+    <Compile Include="DiagnosisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiagnosisForm.Designer.cs">
+      <DependentUpon>DiagnosisForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +126,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Diagnosis.cs" />
+    <Compile Include="Models\patients.cs" />
     <Compile Include="PatientFileViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardHomeForm.resx">
       <DependentUpon>DashboardHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiagnosisForm.resx">
+      <DependentUpon>DiagnosisForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorDashboard.resx">
       <DependentUpon>DoctorDashboard.cs</DependentUpon>
@@ -321,5 +333,4 @@
     <None Include="Resources\medi-cd1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-
 </Project>
