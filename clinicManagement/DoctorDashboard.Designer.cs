@@ -53,9 +53,9 @@
             this.btnPatientFiles.BackColor = System.Drawing.Color.Honeydew;
             this.btnPatientFiles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPatientFiles.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPatientFiles.Location = new System.Drawing.Point(353, 208);
+            this.btnPatientFiles.Location = new System.Drawing.Point(335, 208);
             this.btnPatientFiles.Name = "btnPatientFiles";
-            this.btnPatientFiles.Size = new System.Drawing.Size(103, 36);
+            this.btnPatientFiles.Size = new System.Drawing.Size(119, 36);
             this.btnPatientFiles.TabIndex = 1;
             this.btnPatientFiles.Text = "Patient Files";
             this.btnPatientFiles.UseVisualStyleBackColor = false;
@@ -81,7 +81,7 @@
             this.btnPrescription.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrescription.Location = new System.Drawing.Point(629, 208);
             this.btnPrescription.Name = "btnPrescription";
-            this.btnPrescription.Size = new System.Drawing.Size(103, 36);
+            this.btnPrescription.Size = new System.Drawing.Size(118, 36);
             this.btnPrescription.TabIndex = 3;
             this.btnPrescription.Text = "Prescription";
             this.btnPrescription.UseVisualStyleBackColor = false;
@@ -91,7 +91,7 @@
             this.btnLogOut.BackColor = System.Drawing.Color.Honeydew;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogOut.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Location = new System.Drawing.Point(767, 208);
+            this.btnLogOut.Location = new System.Drawing.Point(781, 208);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(103, 36);
             this.btnLogOut.TabIndex = 4;
