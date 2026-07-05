@@ -119,17 +119,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientFileViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PatientFileViewer.Designer.cs">
-      <DependentUpon>PatientFileViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PatientProfileForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PatientProfileForm.Designer.cs">
-      <DependentUpon>PatientProfileForm.cs</DependentUpon>
     <Compile Include="ManageDoctorsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,11 +188,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientFileViewer.resx">
-      <DependentUpon>PatientFileViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PatientProfileForm.resx">
-      <DependentUpon>PatientProfileForm.cs</DependentUpon>
     <EmbeddedResource Include="ManageDoctorsForm.resx">
       <DependentUpon>ManageDoctorsForm.cs</DependentUpon>
     </EmbeddedResource>
