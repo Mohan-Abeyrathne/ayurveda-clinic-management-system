@@ -368,6 +368,21 @@ Note: This is an automatically generated electronic report file.";
         {
 
         }
+
+        private void txtPatientID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSymptoms_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
