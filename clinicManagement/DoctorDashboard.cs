@@ -21,5 +21,16 @@ namespace clinicManagement
         {
             Application.Exit();
         }
+
+        private void DoctorDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPatientFiles_Click(object sender, EventArgs e)
+        {
+            PatientFileViewer viewer = new PatientFileViewer();
+            viewer.Show();
+        }
     }
 }
