@@ -64,6 +64,7 @@ namespace clinicManagement
         private void PatientFileViewer_Load(object sender, EventArgs e)
         {
             LoadPatients(); //abstraction
+            CenterAllControls();
         }
 
         private void btnViewProfile_Click(object sender, EventArgs e)
@@ -107,6 +108,61 @@ namespace clinicManagement
         private void btnClose1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSearch_MouseEnter(object sender, EventArgs e)
+        {
+            btnSearch.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnSearch_MouseLeave(object sender, EventArgs e)
+        {
+            btnSearch.ForeColor = Color.Honeydew;
+        }
+
+        private void btnViewProfile_MouseEnter(object sender, EventArgs e)
+        {
+            btnViewProfile.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnViewProfile_MouseLeave(object sender, EventArgs e)
+        {
+            btnViewProfile.ForeColor = Color.Honeydew;
+        }
+
+        private void btnClose1_MouseEnter(object sender, EventArgs e)
+        {
+            btnClose1.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnClose1_MouseLeave(object sender, EventArgs e)
+        {
+            btnClose1.ForeColor = Color.Honeydew;
+        }
+
+        //aligning the content to the center of the page
+        private void CenterAllControls()
+        {
+            label1.Left = (this.ClientSize.Width - label1.Width) / 2;
+
+            int searchGap = 12;
+            int searchGroupWidth = txtSearch.Width + searchGap + btnSearch.Width;
+            int searchStartX = (this.ClientSize.Width - searchGroupWidth) / 2;
+            txtSearch.Left = searchStartX;
+            btnSearch.Left = txtSearch.Right + searchGap;
+
+            dgvPatients.Left = (this.ClientSize.Width - dgvPatients.Width) / 2;
+
+            int btnGap = 30;
+            int btnGroupWidth = btnViewProfile.Width + btnGap + btnClose1.Width;
+            int btnStartX = (this.ClientSize.Width - btnGroupWidth) / 2;
+            btnViewProfile.Left = btnStartX;
+            btnClose1.Left = btnViewProfile.Right + btnGap;
+        }
+
+        private void PatientFileViewer_Resize(object sender, EventArgs e)
+        {
+            CenterAllControls();
         }
     }
 }
