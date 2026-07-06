@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8093BF38-B085-4714-9622-7F396CF450B1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ClinicManagementSystem</RootNamespace>
-    <AssemblyName>ClinicManagementSystem</AssemblyName>
+    <RootNamespace>ClinicManagement</RootNamespace>
+    <AssemblyName>ClinicManagement</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

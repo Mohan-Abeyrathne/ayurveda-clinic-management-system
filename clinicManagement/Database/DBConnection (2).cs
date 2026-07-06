@@ -1,6 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 
-namespace ClinicManagementSystem
+namespace ClinicManagement
 {
     public class DBConnection
     {

@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 using System.Drawing.Printing;
 using System.Text;
 
-namespace ClinicManagementSystem
+namespace ClinicManagement
 {
     public partial class PrescriptionForm : Form
     {
