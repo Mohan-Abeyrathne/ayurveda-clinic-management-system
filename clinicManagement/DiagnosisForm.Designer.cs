@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiagnosisForm));
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -55,21 +56,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiagnosis)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.LightBlue;
+            this.btnClear.BackColor = System.Drawing.Color.Transparent;
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Location = new System.Drawing.Point(942, 430);
+            this.btnClear.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnClear.Location = new System.Drawing.Point(944, 808);
             this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(84, 38);
+            this.btnClear.Size = new System.Drawing.Size(144, 44);
             this.btnClear.TabIndex = 17;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -77,15 +79,15 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.LightBlue;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Location = new System.Drawing.Point(942, 363);
+            this.btnDelete.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnDelete.Location = new System.Drawing.Point(944, 658);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(84, 38);
+            this.btnDelete.Size = new System.Drawing.Size(144, 44);
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -93,15 +95,15 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.LightBlue;
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(942, 307);
+            this.btnUpdate.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnUpdate.Location = new System.Drawing.Point(944, 577);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(84, 36);
+            this.btnUpdate.Size = new System.Drawing.Size(144, 44);
             this.btnUpdate.TabIndex = 19;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -109,16 +111,15 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.Crimson;
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(467, 668);
+            this.btnSave.Location = new System.Drawing.Point(944, 509);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(131, 42);
+            this.btnSave.Size = new System.Drawing.Size(144, 44);
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -126,34 +127,34 @@
             // 
             // dgvDiagnosis
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
-            this.dgvDiagnosis.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGray;
+            this.dgvDiagnosis.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDiagnosis.BackgroundColor = System.Drawing.Color.White;
             this.dgvDiagnosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiagnosis.Location = new System.Drawing.Point(150, 748);
+            this.dgvDiagnosis.Location = new System.Drawing.Point(117, 938);
             this.dgvDiagnosis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDiagnosis.Name = "dgvDiagnosis";
             this.dgvDiagnosis.RowHeadersVisible = false;
             this.dgvDiagnosis.RowHeadersWidth = 51;
             this.dgvDiagnosis.RowTemplate.Height = 24;
             this.dgvDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDiagnosis.Size = new System.Drawing.Size(712, 245);
+            this.dgvDiagnosis.Size = new System.Drawing.Size(700, 245);
             this.dgvDiagnosis.TabIndex = 21;
             this.dgvDiagnosis.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellClick);
             this.dgvDiagnosis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellContentClick);
             // 
             // btnReport
             // 
-            this.btnReport.BackColor = System.Drawing.Color.LightBlue;
+            this.btnReport.BackColor = System.Drawing.Color.Transparent;
             this.btnReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReport.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Location = new System.Drawing.Point(942, 785);
+            this.btnReport.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnReport.Location = new System.Drawing.Point(944, 732);
             this.btnReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(93, 58);
+            this.btnReport.Size = new System.Drawing.Size(144, 44);
             this.btnReport.TabIndex = 23;
             this.btnReport.Text = "Generate Report";
             this.btnReport.UseVisualStyleBackColor = false;
@@ -161,7 +162,7 @@
             // 
             // txtDiagnosisID
             // 
-            this.txtDiagnosisID.Location = new System.Drawing.Point(272, 748);
+            this.txtDiagnosisID.Location = new System.Drawing.Point(774, 966);
             this.txtDiagnosisID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiagnosisID.Name = "txtDiagnosisID";
             this.txtDiagnosisID.Size = new System.Drawing.Size(112, 27);
@@ -170,7 +171,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.txtPatientName);
             this.panel1.Controls.Add(this.txtBloodGroup);
@@ -188,7 +189,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(132, 131);
+            this.panel1.Location = new System.Drawing.Point(86, 381);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(767, 508);
             this.panel1.TabIndex = 25;
@@ -286,85 +287,116 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Honeydew;
             this.label8.Location = new System.Drawing.Point(41, 437);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 19);
+            this.label8.Size = new System.Drawing.Size(96, 22);
             this.label8.TabIndex = 24;
             this.label8.Text = "Diagnosis";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Honeydew;
             this.label7.Location = new System.Drawing.Point(37, 361);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 19);
+            this.label7.Size = new System.Drawing.Size(125, 22);
             this.label7.TabIndex = 23;
             this.label7.Text = "Doctor notes";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Honeydew;
             this.label6.Location = new System.Drawing.Point(37, 291);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 19);
+            this.label6.Size = new System.Drawing.Size(149, 22);
             this.label6.TabIndex = 22;
             this.label6.Text = "Pulse Diagnosis";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Honeydew;
             this.label5.Location = new System.Drawing.Point(37, 218);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 19);
+            this.label5.Size = new System.Drawing.Size(107, 22);
             this.label5.TabIndex = 21;
             this.label5.Text = "Symptoms";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Honeydew;
             this.label4.Location = new System.Drawing.Point(37, 169);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 19);
+            this.label4.Size = new System.Drawing.Size(114, 22);
             this.label4.TabIndex = 20;
             this.label4.Text = "Dosha Type";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Honeydew;
             this.label3.Location = new System.Drawing.Point(37, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 19);
+            this.label3.Size = new System.Drawing.Size(108, 22);
             this.label3.TabIndex = 19;
             this.label3.Text = "Blood Type";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Honeydew;
             this.label2.Location = new System.Drawing.Point(37, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 19);
+            this.label2.Size = new System.Drawing.Size(132, 22);
             this.label2.TabIndex = 18;
             this.label2.Text = "Patient Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Honeydew;
             this.label1.Location = new System.Drawing.Point(37, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 19);
+            this.label1.Size = new System.Drawing.Size(101, 22);
             this.label1.TabIndex = 17;
             this.label1.Text = "Patient ID";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Firebrick;
-            this.label10.Location = new System.Drawing.Point(32, 45);
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Honeydew;
+            this.label10.Location = new System.Drawing.Point(330, 300);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(955, 54);
+            this.label10.Size = new System.Drawing.Size(578, 41);
             this.label10.TabIndex = 26;
-            this.label10.Text = "PATIENT DIAGNOSIS AND CLINICAL EVALUATION";
+            this.label10.Text = "Patient Diagnosis  Evaluation";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Honeydew;
+            this.label9.Location = new System.Drawing.Point(861, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(304, 20);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "* Ayurveda Clinic Management System *";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // DiagnosisForm
             // 
@@ -372,7 +404,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1105, 1055);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1190, 1055);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtDiagnosisID);
@@ -386,7 +421,6 @@
             this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DiagnosisForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diagnosis Management";
             this.Load += new System.EventHandler(this.DiagnosisForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiagnosis)).EndInit();
@@ -424,6 +458,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
     }
 }
 
