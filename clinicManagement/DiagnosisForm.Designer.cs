@@ -68,7 +68,7 @@
             this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnClear.Location = new System.Drawing.Point(944, 808);
+            this.btnClear.Location = new System.Drawing.Point(888, 633);
             this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(144, 44);
@@ -84,7 +84,7 @@
             this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnDelete.Location = new System.Drawing.Point(944, 658);
+            this.btnDelete.Location = new System.Drawing.Point(888, 483);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(144, 44);
@@ -100,7 +100,7 @@
             this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnUpdate.Location = new System.Drawing.Point(944, 577);
+            this.btnUpdate.Location = new System.Drawing.Point(888, 402);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(144, 44);
@@ -116,7 +116,7 @@
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(944, 509);
+            this.btnSave.Location = new System.Drawing.Point(888, 334);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(144, 44);
@@ -134,14 +134,14 @@
             this.dgvDiagnosis.BackgroundColor = System.Drawing.Color.White;
             this.dgvDiagnosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiagnosis.Location = new System.Drawing.Point(414, 925);
+            this.dgvDiagnosis.Location = new System.Drawing.Point(137, 805);
             this.dgvDiagnosis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDiagnosis.Name = "dgvDiagnosis";
             this.dgvDiagnosis.RowHeadersVisible = false;
             this.dgvDiagnosis.RowHeadersWidth = 51;
             this.dgvDiagnosis.RowTemplate.Height = 24;
             this.dgvDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDiagnosis.Size = new System.Drawing.Size(524, 117);
+            this.dgvDiagnosis.Size = new System.Drawing.Size(756, 117);
             this.dgvDiagnosis.TabIndex = 21;
             this.dgvDiagnosis.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellClick);
             this.dgvDiagnosis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellContentClick);
@@ -153,7 +153,7 @@
             this.btnReport.FlatAppearance.BorderColor = System.Drawing.Color.Honeydew;
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReport.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnReport.Location = new System.Drawing.Point(944, 732);
+            this.btnReport.Location = new System.Drawing.Point(888, 557);
             this.btnReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(144, 44);
@@ -164,7 +164,7 @@
             // 
             // txtDiagnosisID
             // 
-            this.txtDiagnosisID.Location = new System.Drawing.Point(774, 966);
+            this.txtDiagnosisID.Location = new System.Drawing.Point(810, 835);
             this.txtDiagnosisID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiagnosisID.Name = "txtDiagnosisID";
             this.txtDiagnosisID.Size = new System.Drawing.Size(112, 27);
@@ -191,7 +191,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(86, 381);
+            this.panel1.Location = new System.Drawing.Point(33, 236);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(767, 508);
             this.panel1.TabIndex = 25;
@@ -383,7 +383,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Honeydew;
-            this.label10.Location = new System.Drawing.Point(528, 303);
+            this.label10.Location = new System.Drawing.Point(326, 149);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(560, 40);
             this.label10.TabIndex = 26;
@@ -396,7 +396,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Honeydew;
-            this.label9.Location = new System.Drawing.Point(993, 9);
+            this.label9.Location = new System.Drawing.Point(949, 72);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(304, 20);
             this.label9.TabIndex = 27;
@@ -411,9 +411,7 @@
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-
-            this.ClientSize = new System.Drawing.Size(1301, 1055);
-
+            this.ClientSize = new System.Drawing.Size(1317, 956);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
