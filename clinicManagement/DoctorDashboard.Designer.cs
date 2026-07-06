@@ -36,6 +36,7 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -137,10 +138,23 @@
             this.label2.ForeColor = System.Drawing.Color.Honeydew;
             this.label2.Location = new System.Drawing.Point(529, 288);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(487, 53);
+            this.label2.Size = new System.Drawing.Size(478, 52);
             this.label2.TabIndex = 6;
             this.label2.Text = "Doctor Dashboard!";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Honeydew;
+            this.label3.Location = new System.Drawing.Point(534, 351);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(304, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "* Ayurveda Clinic Management System *";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // DoctorDashboard
             // 
@@ -149,6 +163,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1284, 719);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogOut);
@@ -175,5 +190,6 @@
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
