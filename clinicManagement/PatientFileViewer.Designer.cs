@@ -45,7 +45,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Honeydew;
-            this.label1.Location = new System.Drawing.Point(416, 154);
+            this.label1.Location = new System.Drawing.Point(416, 203);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(484, 52);
             this.label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(457, 258);
+            this.txtSearch.Location = new System.Drawing.Point(452, 321);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(262, 22);
             this.txtSearch.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnSearch.Location = new System.Drawing.Point(741, 252);
+            this.btnSearch.Location = new System.Drawing.Point(736, 315);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(131, 35);
             this.btnSearch.TabIndex = 2;
@@ -85,7 +85,7 @@
             this.dgvPatients.BackgroundColor = System.Drawing.Color.Honeydew;
             this.dgvPatients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPatients.GridColor = System.Drawing.Color.DarkGreen;
-            this.dgvPatients.Location = new System.Drawing.Point(35, 311);
+            this.dgvPatients.Location = new System.Drawing.Point(33, 391);
             this.dgvPatients.MultiSelect = false;
             this.dgvPatients.Name = "dgvPatients";
             this.dgvPatients.ReadOnly = true;
@@ -102,7 +102,7 @@
             this.btnViewProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewProfile.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewProfile.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnViewProfile.Location = new System.Drawing.Point(333, 690);
+            this.btnViewProfile.Location = new System.Drawing.Point(338, 797);
             this.btnViewProfile.Name = "btnViewProfile";
             this.btnViewProfile.Size = new System.Drawing.Size(332, 39);
             this.btnViewProfile.TabIndex = 4;
@@ -118,7 +118,7 @@
             this.btnClose1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose1.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnClose1.Location = new System.Drawing.Point(685, 690);
+            this.btnClose1.Location = new System.Drawing.Point(690, 797);
             this.btnClose1.Name = "btnClose1";
             this.btnClose1.Size = new System.Drawing.Size(332, 39);
             this.btnClose1.TabIndex = 5;
@@ -148,7 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1286, 782);
+            this.ClientSize = new System.Drawing.Size(1286, 922);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnClose1);
             this.Controls.Add(this.btnViewProfile);

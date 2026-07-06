@@ -134,14 +134,14 @@
             this.dgvDiagnosis.BackgroundColor = System.Drawing.Color.White;
             this.dgvDiagnosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiagnosis.Location = new System.Drawing.Point(31, 938);
+            this.dgvDiagnosis.Location = new System.Drawing.Point(414, 925);
             this.dgvDiagnosis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDiagnosis.Name = "dgvDiagnosis";
             this.dgvDiagnosis.RowHeadersVisible = false;
             this.dgvDiagnosis.RowHeadersWidth = 51;
             this.dgvDiagnosis.RowTemplate.Height = 24;
             this.dgvDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDiagnosis.Size = new System.Drawing.Size(1241, 117);
+            this.dgvDiagnosis.Size = new System.Drawing.Size(524, 117);
             this.dgvDiagnosis.TabIndex = 21;
             this.dgvDiagnosis.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellClick);
             this.dgvDiagnosis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellContentClick);
