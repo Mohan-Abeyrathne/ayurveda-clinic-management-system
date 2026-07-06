@@ -28,20 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientProfileForm));
             this.lblTitle = new System.Windows.Forms.Label();
             this.grpPersonal = new System.Windows.Forms.GroupBox();
-            this.lblNameValue = new System.Windows.Forms.Label();
-            this.lblNameStat = new System.Windows.Forms.Label();
-            this.lblAgeStat = new System.Windows.Forms.Label();
-            this.lblGenderStat = new System.Windows.Forms.Label();
-            this.lblBloodStat = new System.Windows.Forms.Label();
-            this.lblPhoneStat = new System.Windows.Forms.Label();
-            this.lblAddressStat = new System.Windows.Forms.Label();
-            this.lblAgeValue = new System.Windows.Forms.Label();
-            this.lblGenderValue = new System.Windows.Forms.Label();
-            this.lblBloodValue = new System.Windows.Forms.Label();
-            this.lblPhoneValue = new System.Windows.Forms.Label();
             this.lblAddressValue = new System.Windows.Forms.Label();
+            this.lblPhoneValue = new System.Windows.Forms.Label();
+            this.lblBloodValue = new System.Windows.Forms.Label();
+            this.lblGenderValue = new System.Windows.Forms.Label();
+            this.lblAgeValue = new System.Windows.Forms.Label();
+            this.lblAddressStat = new System.Windows.Forms.Label();
+            this.lblPhoneStat = new System.Windows.Forms.Label();
+            this.lblBloodStat = new System.Windows.Forms.Label();
+            this.lblGenderStat = new System.Windows.Forms.Label();
+            this.lblAgeStat = new System.Windows.Forms.Label();
+            this.lblNameStat = new System.Windows.Forms.Label();
+            this.lblNameValue = new System.Windows.Forms.Label();
             this.grpDosha = new System.Windows.Forms.GroupBox();
             this.lblAssessmentDateValue = new System.Windows.Forms.Label();
             this.lblAssessmentStat = new System.Windows.Forms.Label();
@@ -55,6 +65,7 @@
             this.dgvTherapy = new System.Windows.Forms.DataGridView();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.grpPersonal.SuspendLayout();
             this.grpDosha.SuspendLayout();
             this.grpHistory.SuspendLayout();
@@ -68,17 +79,18 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblTitle.Location = new System.Drawing.Point(501, 32);
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Honeydew;
+            this.lblTitle.Location = new System.Drawing.Point(383, 48);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(337, 32);
+            this.lblTitle.Size = new System.Drawing.Size(619, 48);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Patient Profile and History";
             // 
             // grpPersonal
             // 
-            this.grpPersonal.BackColor = System.Drawing.SystemColors.Control;
+            this.grpPersonal.BackColor = System.Drawing.Color.Transparent;
             this.grpPersonal.Controls.Add(this.lblAddressValue);
             this.grpPersonal.Controls.Add(this.lblPhoneValue);
             this.grpPersonal.Controls.Add(this.lblBloodValue);
@@ -91,73 +103,64 @@
             this.grpPersonal.Controls.Add(this.lblAgeStat);
             this.grpPersonal.Controls.Add(this.lblNameStat);
             this.grpPersonal.Controls.Add(this.lblNameValue);
-            this.grpPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.grpPersonal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpPersonal.Location = new System.Drawing.Point(29, 106);
+            this.grpPersonal.ForeColor = System.Drawing.Color.Honeydew;
+            this.grpPersonal.Location = new System.Drawing.Point(29, 127);
             this.grpPersonal.Name = "grpPersonal";
             this.grpPersonal.Size = new System.Drawing.Size(593, 249);
             this.grpPersonal.TabIndex = 1;
             this.grpPersonal.TabStop = false;
             this.grpPersonal.Text = "Personal Information";
             // 
-            // lblNameValue
+            // lblAddressValue
             // 
-            this.lblNameValue.AutoSize = true;
-            this.lblNameValue.Location = new System.Drawing.Point(171, 42);
-            this.lblNameValue.Name = "lblNameValue";
-            this.lblNameValue.Size = new System.Drawing.Size(20, 27);
-            this.lblNameValue.TabIndex = 0;
-            this.lblNameValue.Text = "-";
+            this.lblAddressValue.AutoSize = true;
+            this.lblAddressValue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddressValue.Location = new System.Drawing.Point(172, 211);
+            this.lblAddressValue.Name = "lblAddressValue";
+            this.lblAddressValue.Size = new System.Drawing.Size(15, 19);
+            this.lblAddressValue.TabIndex = 2;
+            this.lblAddressValue.Text = "-";
             // 
-            // lblNameStat
+            // lblPhoneValue
             // 
-            this.lblNameStat.AutoSize = true;
-            this.lblNameStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameStat.Location = new System.Drawing.Point(56, 47);
-            this.lblNameStat.Name = "lblNameStat";
-            this.lblNameStat.Size = new System.Drawing.Size(105, 22);
-            this.lblNameStat.TabIndex = 1;
-            this.lblNameStat.Text = "Patient Name:";
+            this.lblPhoneValue.AutoSize = true;
+            this.lblPhoneValue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhoneValue.Location = new System.Drawing.Point(172, 179);
+            this.lblPhoneValue.Name = "lblPhoneValue";
+            this.lblPhoneValue.Size = new System.Drawing.Size(15, 19);
+            this.lblPhoneValue.TabIndex = 2;
+            this.lblPhoneValue.Text = "-";
             // 
-            // lblAgeStat
+            // lblBloodValue
             // 
-            this.lblAgeStat.AutoSize = true;
-            this.lblAgeStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgeStat.Location = new System.Drawing.Point(56, 79);
-            this.lblAgeStat.Name = "lblAgeStat";
-            this.lblAgeStat.Size = new System.Drawing.Size(42, 22);
-            this.lblAgeStat.TabIndex = 2;
-            this.lblAgeStat.Text = "Age:";
+            this.lblBloodValue.AutoSize = true;
+            this.lblBloodValue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBloodValue.Location = new System.Drawing.Point(172, 146);
+            this.lblBloodValue.Name = "lblBloodValue";
+            this.lblBloodValue.Size = new System.Drawing.Size(15, 19);
+            this.lblBloodValue.TabIndex = 2;
+            this.lblBloodValue.Text = "-";
             // 
-            // lblGenderStat
+            // lblGenderValue
             // 
-            this.lblGenderStat.AutoSize = true;
-            this.lblGenderStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenderStat.Location = new System.Drawing.Point(56, 112);
-            this.lblGenderStat.Name = "lblGenderStat";
-            this.lblGenderStat.Size = new System.Drawing.Size(66, 22);
-            this.lblGenderStat.TabIndex = 3;
-            this.lblGenderStat.Text = "Gender:";
+            this.lblGenderValue.AutoSize = true;
+            this.lblGenderValue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenderValue.Location = new System.Drawing.Point(172, 114);
+            this.lblGenderValue.Name = "lblGenderValue";
+            this.lblGenderValue.Size = new System.Drawing.Size(15, 19);
+            this.lblGenderValue.TabIndex = 2;
+            this.lblGenderValue.Text = "-";
             // 
-            // lblBloodStat
+            // lblAgeValue
             // 
-            this.lblBloodStat.AutoSize = true;
-            this.lblBloodStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBloodStat.Location = new System.Drawing.Point(56, 144);
-            this.lblBloodStat.Name = "lblBloodStat";
-            this.lblBloodStat.Size = new System.Drawing.Size(104, 22);
-            this.lblBloodStat.TabIndex = 4;
-            this.lblBloodStat.Text = "Blood Group:";
-            // 
-            // lblPhoneStat
-            // 
-            this.lblPhoneStat.AutoSize = true;
-            this.lblPhoneStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhoneStat.Location = new System.Drawing.Point(56, 177);
-            this.lblPhoneStat.Name = "lblPhoneStat";
-            this.lblPhoneStat.Size = new System.Drawing.Size(59, 22);
-            this.lblPhoneStat.TabIndex = 5;
-            this.lblPhoneStat.Text = "Phone:";
+            this.lblAgeValue.AutoSize = true;
+            this.lblAgeValue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgeValue.Location = new System.Drawing.Point(172, 82);
+            this.lblAgeValue.Name = "lblAgeValue";
+            this.lblAgeValue.Size = new System.Drawing.Size(15, 19);
+            this.lblAgeValue.TabIndex = 6;
+            this.lblAgeValue.Text = "-";
             // 
             // lblAddressStat
             // 
@@ -169,60 +172,77 @@
             this.lblAddressStat.TabIndex = 2;
             this.lblAddressStat.Text = "Address:";
             // 
-            // lblAgeValue
+            // lblPhoneStat
             // 
-            this.lblAgeValue.AutoSize = true;
-            this.lblAgeValue.Location = new System.Drawing.Point(171, 74);
-            this.lblAgeValue.Name = "lblAgeValue";
-            this.lblAgeValue.Size = new System.Drawing.Size(20, 27);
-            this.lblAgeValue.TabIndex = 6;
-            this.lblAgeValue.Text = "-";
+            this.lblPhoneStat.AutoSize = true;
+            this.lblPhoneStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhoneStat.Location = new System.Drawing.Point(56, 177);
+            this.lblPhoneStat.Name = "lblPhoneStat";
+            this.lblPhoneStat.Size = new System.Drawing.Size(59, 22);
+            this.lblPhoneStat.TabIndex = 5;
+            this.lblPhoneStat.Text = "Phone:";
             // 
-            // lblGenderValue
+            // lblBloodStat
             // 
-            this.lblGenderValue.AutoSize = true;
-            this.lblGenderValue.Location = new System.Drawing.Point(171, 107);
-            this.lblGenderValue.Name = "lblGenderValue";
-            this.lblGenderValue.Size = new System.Drawing.Size(20, 27);
-            this.lblGenderValue.TabIndex = 2;
-            this.lblGenderValue.Text = "-";
+            this.lblBloodStat.AutoSize = true;
+            this.lblBloodStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBloodStat.Location = new System.Drawing.Point(56, 144);
+            this.lblBloodStat.Name = "lblBloodStat";
+            this.lblBloodStat.Size = new System.Drawing.Size(104, 22);
+            this.lblBloodStat.TabIndex = 4;
+            this.lblBloodStat.Text = "Blood Group:";
             // 
-            // lblBloodValue
+            // lblGenderStat
             // 
-            this.lblBloodValue.AutoSize = true;
-            this.lblBloodValue.Location = new System.Drawing.Point(171, 139);
-            this.lblBloodValue.Name = "lblBloodValue";
-            this.lblBloodValue.Size = new System.Drawing.Size(20, 27);
-            this.lblBloodValue.TabIndex = 2;
-            this.lblBloodValue.Text = "-";
+            this.lblGenderStat.AutoSize = true;
+            this.lblGenderStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenderStat.Location = new System.Drawing.Point(56, 112);
+            this.lblGenderStat.Name = "lblGenderStat";
+            this.lblGenderStat.Size = new System.Drawing.Size(66, 22);
+            this.lblGenderStat.TabIndex = 3;
+            this.lblGenderStat.Text = "Gender:";
             // 
-            // lblPhoneValue
+            // lblAgeStat
             // 
-            this.lblPhoneValue.AutoSize = true;
-            this.lblPhoneValue.Location = new System.Drawing.Point(171, 172);
-            this.lblPhoneValue.Name = "lblPhoneValue";
-            this.lblPhoneValue.Size = new System.Drawing.Size(20, 27);
-            this.lblPhoneValue.TabIndex = 2;
-            this.lblPhoneValue.Text = "-";
+            this.lblAgeStat.AutoSize = true;
+            this.lblAgeStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgeStat.Location = new System.Drawing.Point(56, 79);
+            this.lblAgeStat.Name = "lblAgeStat";
+            this.lblAgeStat.Size = new System.Drawing.Size(42, 22);
+            this.lblAgeStat.TabIndex = 2;
+            this.lblAgeStat.Text = "Age:";
             // 
-            // lblAddressValue
+            // lblNameStat
             // 
-            this.lblAddressValue.AutoSize = true;
-            this.lblAddressValue.Location = new System.Drawing.Point(171, 204);
-            this.lblAddressValue.Name = "lblAddressValue";
-            this.lblAddressValue.Size = new System.Drawing.Size(20, 27);
-            this.lblAddressValue.TabIndex = 2;
-            this.lblAddressValue.Text = "-";
+            this.lblNameStat.AutoSize = true;
+            this.lblNameStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameStat.Location = new System.Drawing.Point(56, 47);
+            this.lblNameStat.Name = "lblNameStat";
+            this.lblNameStat.Size = new System.Drawing.Size(105, 22);
+            this.lblNameStat.TabIndex = 1;
+            this.lblNameStat.Text = "Patient Name:";
+            // 
+            // lblNameValue
+            // 
+            this.lblNameValue.AutoSize = true;
+            this.lblNameValue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameValue.Location = new System.Drawing.Point(172, 49);
+            this.lblNameValue.Name = "lblNameValue";
+            this.lblNameValue.Size = new System.Drawing.Size(15, 19);
+            this.lblNameValue.TabIndex = 0;
+            this.lblNameValue.Text = "-";
             // 
             // grpDosha
             // 
+            this.grpDosha.BackColor = System.Drawing.Color.Transparent;
             this.grpDosha.Controls.Add(this.lblAssessmentDateValue);
             this.grpDosha.Controls.Add(this.lblAssessmentStat);
             this.grpDosha.Controls.Add(this.lblBodyStat);
             this.grpDosha.Controls.Add(this.lblDoshaValue);
             this.grpDosha.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.grpDosha.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpDosha.Location = new System.Drawing.Point(666, 106);
+            this.grpDosha.ForeColor = System.Drawing.Color.Honeydew;
+            this.grpDosha.Location = new System.Drawing.Point(666, 127);
             this.grpDosha.Name = "grpDosha";
             this.grpDosha.Size = new System.Drawing.Size(593, 142);
             this.grpDosha.TabIndex = 7;
@@ -232,9 +252,12 @@
             // lblAssessmentDateValue
             // 
             this.lblAssessmentDateValue.AutoSize = true;
-            this.lblAssessmentDateValue.Location = new System.Drawing.Point(193, 84);
+            this.lblAssessmentDateValue.BackColor = System.Drawing.Color.Transparent;
+            this.lblAssessmentDateValue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssessmentDateValue.ForeColor = System.Drawing.Color.Honeydew;
+            this.lblAssessmentDateValue.Location = new System.Drawing.Point(193, 92);
             this.lblAssessmentDateValue.Name = "lblAssessmentDateValue";
-            this.lblAssessmentDateValue.Size = new System.Drawing.Size(20, 27);
+            this.lblAssessmentDateValue.Size = new System.Drawing.Size(15, 19);
             this.lblAssessmentDateValue.TabIndex = 6;
             this.lblAssessmentDateValue.Text = "-";
             this.lblAssessmentDateValue.Click += new System.EventHandler(this.label5_Click);
@@ -242,7 +265,9 @@
             // lblAssessmentStat
             // 
             this.lblAssessmentStat.AutoSize = true;
+            this.lblAssessmentStat.BackColor = System.Drawing.Color.Transparent;
             this.lblAssessmentStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssessmentStat.ForeColor = System.Drawing.Color.Honeydew;
             this.lblAssessmentStat.Location = new System.Drawing.Point(58, 89);
             this.lblAssessmentStat.Name = "lblAssessmentStat";
             this.lblAssessmentStat.Size = new System.Drawing.Size(134, 22);
@@ -252,7 +277,9 @@
             // lblBodyStat
             // 
             this.lblBodyStat.AutoSize = true;
+            this.lblBodyStat.BackColor = System.Drawing.Color.Transparent;
             this.lblBodyStat.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBodyStat.ForeColor = System.Drawing.Color.Honeydew;
             this.lblBodyStat.Location = new System.Drawing.Point(58, 57);
             this.lblBodyStat.Name = "lblBodyStat";
             this.lblBodyStat.Size = new System.Drawing.Size(89, 22);
@@ -262,18 +289,23 @@
             // lblDoshaValue
             // 
             this.lblDoshaValue.AutoSize = true;
-            this.lblDoshaValue.Location = new System.Drawing.Point(193, 52);
+            this.lblDoshaValue.BackColor = System.Drawing.Color.Transparent;
+            this.lblDoshaValue.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoshaValue.ForeColor = System.Drawing.Color.Honeydew;
+            this.lblDoshaValue.Location = new System.Drawing.Point(193, 59);
             this.lblDoshaValue.Name = "lblDoshaValue";
-            this.lblDoshaValue.Size = new System.Drawing.Size(20, 27);
+            this.lblDoshaValue.Size = new System.Drawing.Size(15, 19);
             this.lblDoshaValue.TabIndex = 0;
             this.lblDoshaValue.Text = "-";
             // 
             // grpHistory
             // 
+            this.grpHistory.BackColor = System.Drawing.Color.Transparent;
             this.grpHistory.Controls.Add(this.dgvHistory);
             this.grpHistory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.grpHistory.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpHistory.Location = new System.Drawing.Point(29, 371);
+            this.grpHistory.ForeColor = System.Drawing.Color.Honeydew;
+            this.grpHistory.Location = new System.Drawing.Point(29, 391);
             this.grpHistory.Name = "grpHistory";
             this.grpHistory.Size = new System.Drawing.Size(1230, 194);
             this.grpHistory.TabIndex = 8;
@@ -282,10 +314,38 @@
             // 
             // dgvHistory
             // 
+            this.dgvHistory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvHistory.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvHistory.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHistory.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvHistory.Location = new System.Drawing.Point(62, 51);
             this.dgvHistory.Name = "dgvHistory";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvHistory.RowHeadersWidth = 51;
             this.dgvHistory.RowTemplate.Height = 24;
             this.dgvHistory.Size = new System.Drawing.Size(1136, 113);
@@ -293,10 +353,12 @@
             // 
             // grpPrescriptions
             // 
+            this.grpPrescriptions.BackColor = System.Drawing.Color.Transparent;
             this.grpPrescriptions.Controls.Add(this.dgvPrescriptions);
             this.grpPrescriptions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.grpPrescriptions.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpPrescriptions.Location = new System.Drawing.Point(29, 581);
+            this.grpPrescriptions.ForeColor = System.Drawing.Color.Honeydew;
+            this.grpPrescriptions.Location = new System.Drawing.Point(29, 602);
             this.grpPrescriptions.Name = "grpPrescriptions";
             this.grpPrescriptions.Size = new System.Drawing.Size(1230, 199);
             this.grpPrescriptions.TabIndex = 9;
@@ -306,10 +368,38 @@
             // 
             // dgvPrescriptions
             // 
+            this.dgvPrescriptions.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPrescriptions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvPrescriptions.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvPrescriptions.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescriptions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPrescriptions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescriptions.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvPrescriptions.Location = new System.Drawing.Point(62, 51);
             this.dgvPrescriptions.Name = "dgvPrescriptions";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescriptions.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvPrescriptions.RowHeadersWidth = 51;
             this.dgvPrescriptions.RowTemplate.Height = 24;
             this.dgvPrescriptions.Size = new System.Drawing.Size(1136, 113);
@@ -317,10 +407,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.dgvTherapy);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(29, 796);
+            this.groupBox1.ForeColor = System.Drawing.Color.Honeydew;
+            this.groupBox1.Location = new System.Drawing.Point(29, 807);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1230, 199);
             this.groupBox1.TabIndex = 10;
@@ -329,10 +421,38 @@
             // 
             // dgvTherapy
             // 
+            this.dgvTherapy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTherapy.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvTherapy.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvTherapy.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTherapy.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvTherapy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTherapy.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvTherapy.Location = new System.Drawing.Point(62, 51);
             this.dgvTherapy.Name = "dgvTherapy";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTherapy.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvTherapy.RowHeadersWidth = 51;
             this.dgvTherapy.RowTemplate.Height = 24;
             this.dgvTherapy.Size = new System.Drawing.Size(1136, 113);
@@ -340,35 +460,59 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.BackColor = System.Drawing.Color.Honeydew;
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.Location = new System.Drawing.Point(394, 1001);
+            this.btnPrint.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnPrint.Location = new System.Drawing.Point(391, 1012);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(263, 30);
+            this.btnPrint.Size = new System.Drawing.Size(263, 42);
             this.btnPrint.TabIndex = 11;
             this.btnPrint.Text = "Generate Clinical Summary";
             this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            this.btnPrint.MouseEnter += new System.EventHandler(this.btnPrint_MouseEnter);
+            this.btnPrint.MouseLeave += new System.EventHandler(this.btnPrint_MouseLeave);
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Honeydew;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(696, 1001);
+            this.btnClose.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnClose.Location = new System.Drawing.Point(693, 1012);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(263, 30);
+            this.btnClose.Size = new System.Drawing.Size(263, 42);
             this.btnClose.TabIndex = 12;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
+            this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Honeydew;
+            this.label3.Location = new System.Drawing.Point(972, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(304, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "* Ayurveda Clinic Management System *";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // PatientProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1288, 1055);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.groupBox1);
@@ -378,7 +522,9 @@
             this.Controls.Add(this.grpPersonal);
             this.Controls.Add(this.lblTitle);
             this.Name = "PatientProfileForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient Profile";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PatientProfileForm_Load);
             this.grpPersonal.ResumeLayout(false);
             this.grpPersonal.PerformLayout();
@@ -424,5 +570,6 @@
         private System.Windows.Forms.DataGridView dgvTherapy;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label label3;
     }
 }

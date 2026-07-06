@@ -25,6 +25,7 @@ namespace clinicManagement
         public PatientProfileForm()
         {
             InitializeComponent();
+            this.Resize += PatientProfileForm_Resize;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -214,6 +215,8 @@ namespace clinicManagement
             LoadHistory(); //abstraction as the method is coded before
             LoadPrescriptions(); //abstraction as the method is coded before
             LoadTherapySessions(); //abstraction as the method is coded before
+
+            CenterAllControls();
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -295,6 +298,52 @@ namespace clinicManagement
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void CenterAllControls()
+        {
+            int spacing = 40;
+            lblTitle.Left = (this.ClientSize.Width - lblTitle.Width) / 2;
+
+            int totalWidth = grpPersonal.Width + spacing + grpDosha.Width;
+
+            int startX = (this.ClientSize.Width - totalWidth) / 2;
+            grpPersonal.Left = startX;
+            grpDosha.Left = grpPersonal.Right + spacing;
+            grpHistory.Left = (this.ClientSize.Width - grpHistory.Width) / 2;
+            grpPrescriptions.Left = (this.ClientSize.Width - grpPrescriptions.Width) / 2;
+            groupBox1.Left = (this.ClientSize.Width - groupBox1.Width) / 2;
+
+            int buttonSpacing = 20;
+            int buttonsWidth = btnPrint.Width + btnClose.Width + buttonSpacing;
+            int buttonsStart = (this.ClientSize.Width - buttonsWidth) / 2;
+
+            int totalButtonWidth = btnPrint.Width + btnClose.Width + buttonSpacing;
+            btnPrint.Left = buttonsStart;
+            btnClose.Left = btnPrint.Right + buttonSpacing;
+        }
+        private void PatientProfileForm_Resize(object sender, EventArgs e)
+        {
+            CenterAllControls();
+        }
+
+        private void btnPrint_MouseEnter(object sender, EventArgs e)
+        {
+            btnPrint.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnPrint_MouseLeave(object sender, EventArgs e)
+        {
+            btnPrint.ForeColor = Color.Honeydew;
+        }
+
+        private void btnClose_MouseEnter(object sender, EventArgs e)
+        {
+            btnClose.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnClose_MouseLeave(object sender, EventArgs e)
+        {
+            btnClose.ForeColor = Color.Honeydew;
         }
     }
 }
