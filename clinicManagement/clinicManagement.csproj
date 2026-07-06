@@ -119,7 +119,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPharmacyManagementcs.cs" />
+    <Compile Include="FrmPharmacyManagementcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmPharmacyManagementcs.Designer.cs">
       <DependentUpon>FrmPharmacyManagementcs.cs</DependentUpon>
     </Compile>
@@ -149,7 +151,9 @@
     <Compile Include="UC_AddDoctor.Designer.cs">
       <DependentUpon>UC_AddDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_AddNewMedicine.cs" />
+    <Compile Include="UC_AddNewMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UC_AddNewMedicine.Designer.cs">
       <DependentUpon>UC_AddNewMedicine.cs</DependentUpon>
     </Compile>
@@ -159,11 +163,15 @@
     <Compile Include="UC_AddStaff.Designer.cs">
       <DependentUpon>UC_AddStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ManageInventory.cs" />
+    <Compile Include="UC_ManageInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UC_ManageInventory.Designer.cs">
       <DependentUpon>UC_ManageInventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_PharmacyDashboard.cs" />
+    <Compile Include="UC_PharmacyDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UC_PharmacyDashboard.Designer.cs">
       <DependentUpon>UC_PharmacyDashboard.cs</DependentUpon>
     </Compile>
