@@ -27,7 +27,7 @@ namespace clinicManagement
 
         private void DiagnosisForm_Load(object sender, EventArgs e)
         {
-
+            CenterAllControls();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -372,50 +372,25 @@ Note: This is an automatically generated electronic report file.";
         }
         private void CenterAllControls()
         {
-            // 1. Center the Main Title text
             label10.Left = (this.ClientSize.Width - label10.Width) / 2;
 
-            // 2. Define the exact width of your entry row block
-            // Measure from the start of your labels to the end of your textboxes
-            int labelWidth = label1.Width; // Assuming label1 is "Patient ID"
-            int fieldGap = 20;
-            int inputWidth = txtPatientID.Width;
-            int searchGap = 12;
+            panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
 
-            // Total block width including the search button on that top row
-            int formContentWidth = labelWidth + fieldGap + inputWidth + searchGap + btnSearch.Width;
-            int contentStartX = (this.ClientSize.Width - formContentWidth) / 2;
-
-            // 3. Align the left columns perfectly uniform down the screen
-            label1.Left = contentStartX; // Patient ID Label
-            label2.Left = contentStartX; // Patient Name Label
-            label3.Left = contentStartX; // Blood Type Label
-                                         // ... Repeat for your other labels down to label8
-
-            // 4. Align the entry fields into a straight column
-            int textBoxX = contentStartX + labelWidth + fieldGap;
-            txtPatientID.Left = textBoxX;
-            txtPatientName.Left = textBoxX;
-            txtBloodGroup.Left = textBoxX;
-            txtDosha.Left = textBoxX;
-            txtSymptoms.Left = textBoxX;
-            txtPulseDiagnosis.Left = textBoxX;
-            txtDoctorNotes.Left = textBoxX;
-
-            // 5. Dock the Search button right next to the Patient ID box
-            btnSearch.Left = txtPatientID.Right + searchGap;
-
-            // 6. Stack the Action Buttons column on the right side
-            int actionButtonsGap = 40; // Space between input boxes and the right button stack
-            int actionButtonsX = txtPatientID.Right + actionButtonsGap;
+            int actionButtonsGap = 40;
+            int actionButtonsX = panel1.Right + actionButtonsGap;
 
             btnSave.Left = actionButtonsX;
             btnUpdate.Left = actionButtonsX;
             btnDelete.Left = actionButtonsX;
-            btnReport.Left = actionButtonsX; // "Generate Report" button
+            btnReport.Left = actionButtonsX;
+            btnClear.Left = actionButtonsX;
+
+            dgvDiagnosis.Left = (this.ClientSize.Width - dgvDiagnosis.Width) / 2;
         }
-
-
+        private void DiagnosisForm_Resize(object sender, EventArgs e)
+        {
+            CenterAllControls();
+        }
     }
 }
 

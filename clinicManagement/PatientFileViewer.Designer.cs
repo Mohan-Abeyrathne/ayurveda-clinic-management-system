@@ -47,7 +47,7 @@
             this.label1.ForeColor = System.Drawing.Color.Honeydew;
             this.label1.Location = new System.Drawing.Point(416, 154);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(489, 53);
+            this.label1.Size = new System.Drawing.Size(484, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "Patient File Viewer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -130,6 +130,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
