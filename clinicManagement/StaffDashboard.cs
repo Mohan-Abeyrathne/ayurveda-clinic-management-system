@@ -12,6 +12,8 @@ namespace clinicManagement
 {
     public partial class StaffDashboard : Form
     {
+        private bool isLoggingOut = false; // flag for login
+        private Form activeForm = null;
         public StaffDashboard()
         {
             InitializeComponent();
@@ -59,7 +61,38 @@ namespace clinicManagement
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation",
+                                                      MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                isLoggingOut = true;
+
+                Form1 loginForm = (Form1)Application.OpenForms["Form1"];
+
+                if (loginForm != null)
+                {
+                    loginForm.Show();
+
+                    TextBox txtUser = (TextBox)loginForm.Controls.Find("login_username", true).FirstOrDefault();
+                    TextBox txtPass = (TextBox)loginForm.Controls.Find("login_password", true).FirstOrDefault();
+                    if (txtUser != null) txtUser.Clear();
+                    if (txtPass != null) txtPass.Clear();
+                }
+                else
+                {
+                    Form1 newLoginForm = new Form1();
+                    newLoginForm.Show();
+                }
+
+                this.Close();
+            }
+        }
+
+        private void StaffDashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
