@@ -95,14 +95,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs" />
     <Compile Include="AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctor.cs" />
+    <Compile Include="DashboardHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardHomeForm.Designer.cs">
+      <DependentUpon>DashboardHomeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,24 +119,98 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatientFileViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientFileViewer.Designer.cs">
+      <DependentUpon>PatientFileViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientProfileForm.Designer.cs">
+      <DependentUpon>PatientProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDoctorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDoctorsForm.Designer.cs">
+      <DependentUpon>ManageDoctorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStaffForm.Designer.cs">
+      <DependentUpon>ManageStaffForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Staff.cs" />
     <Compile Include="StaffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StaffDashboard.Designer.cs">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_AddDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AddDoctor.Designer.cs">
+      <DependentUpon>UC_AddDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AddStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AddStaff.Designer.cs">
+      <DependentUpon>UC_AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SearchModifyDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SearchModifyDoctor.Designer.cs">
+      <DependentUpon>UC_SearchModifyDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SearchModifyStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SearchModifyStaff.Designer.cs">
+      <DependentUpon>UC_SearchModifyStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ViewAllDoctors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ViewAllDoctors.Designer.cs">
+      <DependentUpon>UC_ViewAllDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ViewAllStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ViewAllStaff.Designer.cs">
+      <DependentUpon>UC_ViewAllStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardHomeForm.resx">
+      <DependentUpon>DashboardHomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorDashboard.resx">
       <DependentUpon>DoctorDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientFileViewer.resx">
+      <DependentUpon>PatientFileViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientProfileForm.resx">
+      <DependentUpon>PatientProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDoctorsForm.resx">
+      <DependentUpon>ManageDoctorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStaffForm.resx">
+      <DependentUpon>ManageStaffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,6 +224,24 @@
     </Compile>
     <EmbeddedResource Include="StaffDashboard.resx">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AddDoctor.resx">
+      <DependentUpon>UC_AddDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AddStaff.resx">
+      <DependentUpon>UC_AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SearchModifyDoctor.resx">
+      <DependentUpon>UC_SearchModifyDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SearchModifyStaff.resx">
+      <DependentUpon>UC_SearchModifyStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ViewAllDoctors.resx">
+      <DependentUpon>UC_ViewAllDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ViewAllStaff.resx">
+      <DependentUpon>UC_ViewAllStaff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -166,6 +262,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2026-06-18 212100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-06-18 2121001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2843%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2843%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2844%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-admin-panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-navbar-admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-navbar-admin %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-dp-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-navbar-admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-bg-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medi-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-bg-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff-cd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc-cd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medi-cd1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
