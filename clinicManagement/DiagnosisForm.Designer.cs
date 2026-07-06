@@ -129,17 +129,19 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGray;
             this.dgvDiagnosis.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDiagnosis.BackgroundColor = System.Drawing.Color.White;
             this.dgvDiagnosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiagnosis.Location = new System.Drawing.Point(117, 938);
+            this.dgvDiagnosis.Location = new System.Drawing.Point(31, 938);
             this.dgvDiagnosis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDiagnosis.Name = "dgvDiagnosis";
             this.dgvDiagnosis.RowHeadersVisible = false;
             this.dgvDiagnosis.RowHeadersWidth = 51;
             this.dgvDiagnosis.RowTemplate.Height = 24;
             this.dgvDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDiagnosis.Size = new System.Drawing.Size(700, 245);
+            this.dgvDiagnosis.Size = new System.Drawing.Size(1241, 117);
             this.dgvDiagnosis.TabIndex = 21;
             this.dgvDiagnosis.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellClick);
             this.dgvDiagnosis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellContentClick);
@@ -375,23 +377,26 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Honeydew;
-            this.label10.Location = new System.Drawing.Point(330, 300);
+            this.label10.Location = new System.Drawing.Point(528, 303);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(578, 41);
+            this.label10.Size = new System.Drawing.Size(560, 40);
             this.label10.TabIndex = 26;
             this.label10.Text = "Patient Diagnosis  Evaluation";
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Honeydew;
-            this.label9.Location = new System.Drawing.Point(861, 9);
+            this.label9.Location = new System.Drawing.Point(993, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(304, 20);
             this.label9.TabIndex = 27;
@@ -406,7 +411,7 @@
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1190, 1055);
+            this.ClientSize = new System.Drawing.Size(1301, 1055);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
