@@ -98,9 +98,9 @@
             // 
             this.login_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.login_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_password.Location = new System.Drawing.Point(132, 205);
+            this.login_password.Location = new System.Drawing.Point(142, 205);
             this.login_password.Name = "login_password";
-            this.login_password.Size = new System.Drawing.Size(186, 34);
+            this.login_password.Size = new System.Drawing.Size(176, 34);
             this.login_password.TabIndex = 4;
             this.login_password.UseSystemPasswordChar = true;
             this.login_password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -109,19 +109,19 @@
             // 
             this.login_username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.login_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_username.Location = new System.Drawing.Point(132, 154);
+            this.login_username.Location = new System.Drawing.Point(142, 154);
             this.login_username.Name = "login_username";
-            this.login_username.Size = new System.Drawing.Size(186, 34);
+            this.login_username.Size = new System.Drawing.Size(176, 34);
             this.login_username.TabIndex = 3;
             this.login_username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 210);
+            this.label3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(27, 210);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 23);
+            this.label3.Size = new System.Drawing.Size(96, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -129,10 +129,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 159);
+            this.label2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(27, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 23);
+            this.label2.Size = new System.Drawing.Size(99, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username";
             this.label2.Click += new System.EventHandler(this.label2_Click);
