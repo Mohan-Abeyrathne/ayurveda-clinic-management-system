@@ -119,17 +119,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientFileViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PatientFileViewer.Designer.cs">
-      <DependentUpon>PatientFileViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PatientProfileForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PatientProfileForm.Designer.cs">
-      <DependentUpon>PatientProfileForm.cs</DependentUpon>
+    <Compile Include="FrmPharmacyManagementcs.cs" />
+    <Compile Include="FrmPharmacyManagementcs.Designer.cs">
+      <DependentUpon>FrmPharmacyManagementcs.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageDoctorsForm.cs">
       <SubType>Form</SubType>
@@ -157,11 +149,23 @@
     <Compile Include="UC_AddDoctor.Designer.cs">
       <DependentUpon>UC_AddDoctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_AddNewMedicine.cs" />
+    <Compile Include="UC_AddNewMedicine.Designer.cs">
+      <DependentUpon>UC_AddNewMedicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_AddStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_AddStaff.Designer.cs">
       <DependentUpon>UC_AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ManageInventory.cs" />
+    <Compile Include="UC_ManageInventory.Designer.cs">
+      <DependentUpon>UC_ManageInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_PharmacyDashboard.cs" />
+    <Compile Include="UC_PharmacyDashboard.Designer.cs">
+      <DependentUpon>UC_PharmacyDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_SearchModifyDoctor.cs">
       <SubType>UserControl</SubType>
@@ -200,11 +204,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientFileViewer.resx">
-      <DependentUpon>PatientFileViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PatientProfileForm.resx">
-      <DependentUpon>PatientProfileForm.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPharmacyManagementcs.resx">
+      <DependentUpon>FrmPharmacyManagementcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageDoctorsForm.resx">
       <DependentUpon>ManageDoctorsForm.cs</DependentUpon>
@@ -230,6 +231,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_AddStaff.resx">
       <DependentUpon>UC_AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ManageInventory.resx">
+      <DependentUpon>UC_ManageInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PharmacyDashboard.resx">
+      <DependentUpon>UC_PharmacyDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_SearchModifyDoctor.resx">
       <DependentUpon>UC_SearchModifyDoctor.cs</DependentUpon>

@@ -97,7 +97,9 @@ namespace clinicManagement
 
         private void btnInventory_Click(object sender, EventArgs e)
         {
-            
+            FrmPharmacyManagementcs pharmacyForm = new FrmPharmacyManagementcs();
+
+            pharmacyForm.ShowDialog();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)

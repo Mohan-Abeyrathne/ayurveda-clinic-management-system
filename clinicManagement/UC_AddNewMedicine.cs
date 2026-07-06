@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace clinicManagement
 {
-    public partial class DoctorDashboard : Form
+    public partial class UC_AddNewMedicine : UserControl
     {
-        public DoctorDashboard()
+        public UC_AddNewMedicine()
         {
             InitializeComponent();
-        }
-
-        private void DoctorDashboard_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
