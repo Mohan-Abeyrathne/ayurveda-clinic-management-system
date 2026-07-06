@@ -178,5 +178,10 @@ namespace clinicManagement
             btnDeleteStaff.Enabled = false;
             selectedUserID = -1;
         }
+
+        private void txtEditStaffPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

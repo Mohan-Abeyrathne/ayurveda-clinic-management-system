@@ -104,7 +104,7 @@
             this.btnDeleteStaff.FlatAppearance.BorderSize = 0;
             this.btnDeleteStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteStaff.Location = new System.Drawing.Point(51, 312);
+            this.btnDeleteStaff.Location = new System.Drawing.Point(71, 312);
             this.btnDeleteStaff.Name = "btnDeleteStaff";
             this.btnDeleteStaff.Size = new System.Drawing.Size(119, 46);
             this.btnDeleteStaff.TabIndex = 7;
@@ -118,7 +118,7 @@
             this.btnUpdateStaff.FlatAppearance.BorderSize = 0;
             this.btnUpdateStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateStaff.Location = new System.Drawing.Point(191, 312);
+            this.btnUpdateStaff.Location = new System.Drawing.Point(205, 312);
             this.btnUpdateStaff.Name = "btnUpdateStaff";
             this.btnUpdateStaff.Size = new System.Drawing.Size(119, 46);
             this.btnUpdateStaff.TabIndex = 6;
@@ -130,7 +130,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 211);
+            this.label4.Location = new System.Drawing.Point(48, 211);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 25);
             this.label4.TabIndex = 5;
@@ -140,7 +140,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 121);
+            this.label3.Location = new System.Drawing.Point(48, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 25);
             this.label3.TabIndex = 4;
@@ -150,7 +150,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 38);
+            this.label2.Location = new System.Drawing.Point(46, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 25);
             this.label2.TabIndex = 3;
@@ -160,7 +160,7 @@
             // txtEditStaffFullName
             // 
             this.txtEditStaffFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditStaffFullName.Location = new System.Drawing.Point(32, 149);
+            this.txtEditStaffFullName.Location = new System.Drawing.Point(51, 149);
             this.txtEditStaffFullName.Name = "txtEditStaffFullName";
             this.txtEditStaffFullName.Size = new System.Drawing.Size(296, 30);
             this.txtEditStaffFullName.TabIndex = 2;
@@ -169,15 +169,16 @@
             // txtEditStaffPhone
             // 
             this.txtEditStaffPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditStaffPhone.Location = new System.Drawing.Point(32, 239);
+            this.txtEditStaffPhone.Location = new System.Drawing.Point(51, 239);
             this.txtEditStaffPhone.Name = "txtEditStaffPhone";
             this.txtEditStaffPhone.Size = new System.Drawing.Size(296, 30);
             this.txtEditStaffPhone.TabIndex = 1;
+            this.txtEditStaffPhone.TextChanged += new System.EventHandler(this.txtEditStaffPhone_TextChanged);
             // 
             // txtEditStaffUsername
             // 
             this.txtEditStaffUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditStaffUsername.Location = new System.Drawing.Point(32, 66);
+            this.txtEditStaffUsername.Location = new System.Drawing.Point(51, 66);
             this.txtEditStaffUsername.Name = "txtEditStaffUsername";
             this.txtEditStaffUsername.Size = new System.Drawing.Size(296, 30);
             this.txtEditStaffUsername.TabIndex = 0;
