@@ -24,9 +24,27 @@ namespace clinicManagement
             Application.Exit();
         }
 
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+
+            pnlMainContent.Controls.Add(childForm);
+            pnlMainContent.Tag = childForm;
+
+            childForm.BringToFront();
+
+            childForm.Show();
+        }
+
         private void btnMainDashboard_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new StaffHomeForm());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -49,10 +67,6 @@ namespace clinicManagement
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -91,6 +105,16 @@ namespace clinicManagement
         }
 
         private void StaffDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

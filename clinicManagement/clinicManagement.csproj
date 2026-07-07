@@ -145,6 +145,12 @@
     <Compile Include="StaffDashboard.Designer.cs">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaffHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffHomeForm.Designer.cs">
+      <DependentUpon>StaffHomeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_AddDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </Compile>
     <EmbeddedResource Include="StaffDashboard.resx">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffHomeForm.resx">
+      <DependentUpon>StaffHomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_AddDoctor.resx">
       <DependentUpon>UC_AddDoctor.cs</DependentUpon>
@@ -334,6 +343,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\medi-cd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-staff-dashboard-2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
