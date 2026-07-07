@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace clinicManagement
 {
-    public partial class StaffHomeForm : Form
+    public partial class ucManageAppointment : UserControl
     {
-        public StaffHomeForm()
+        public ucManageAppointment()
         {
             InitializeComponent();
         }
 
-        private void StaffHomeForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRemainingCount_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
