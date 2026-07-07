@@ -21,5 +21,10 @@ namespace clinicManagement
         {
 
         }
+
+        private void lblRemainingCount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

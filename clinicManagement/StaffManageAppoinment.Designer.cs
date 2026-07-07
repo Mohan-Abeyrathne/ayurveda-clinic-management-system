@@ -108,6 +108,7 @@
             this.Controls.Add(this.oppoinmentpnlsubnavigation);
             this.Name = "StaffManageAppoinment";
             this.Text = "StaffManageAppoinment";
+            this.Load += new System.EventHandler(this.StaffManageAppoinment_Load);
             this.oppoinmentpnlsubnavigation.ResumeLayout(false);
             this.ResumeLayout(false);
 

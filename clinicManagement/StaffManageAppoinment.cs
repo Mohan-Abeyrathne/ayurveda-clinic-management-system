@@ -23,8 +23,12 @@ namespace clinicManagement
         private void btnAddAppointment_Click(object sender, EventArgs e)
         {
 
+
         }
 
+        private void StaffManageAppoinment_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

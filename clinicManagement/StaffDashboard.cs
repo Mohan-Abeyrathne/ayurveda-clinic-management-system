@@ -49,7 +49,8 @@ namespace clinicManagement
 
         private void button2_Click(object sender, EventArgs e) // book appoinment btn
         {
-
+            StaffManageAppoinment manageAppoinmentPopup = new StaffManageAppoinment();
+            manageAppoinmentPopup.ShowDialog(this);
         }
 
         private void btnPatientManagement_Click(object sender, EventArgs e)
