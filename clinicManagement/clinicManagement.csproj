@@ -151,6 +151,12 @@
     <Compile Include="StaffDashboard.Designer.cs">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaffDoshaProfiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffDoshaProfiler.Designer.cs">
+      <DependentUpon>StaffDoshaProfiler.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffHomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StaffDashboard.resx">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDoshaProfiler.resx">
+      <DependentUpon>StaffDoshaProfiler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffHomeForm.resx">
       <DependentUpon>StaffHomeForm.cs</DependentUpon>

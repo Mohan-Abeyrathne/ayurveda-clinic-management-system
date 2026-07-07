@@ -59,7 +59,7 @@ namespace clinicManagement
 
         private void btnDoshaProfiler_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new StaffDoshaProfiler());
         }
 
         private void btnHerbalStock_Click(object sender, EventArgs e)
