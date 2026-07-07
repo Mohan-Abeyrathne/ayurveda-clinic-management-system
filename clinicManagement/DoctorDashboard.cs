@@ -106,5 +106,11 @@ namespace clinicManagement
 
             PrescriptionWindow.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TherapyViewer therapy = new TherapyViewer();
+            therapy.Show();
+        }
     }
 }
