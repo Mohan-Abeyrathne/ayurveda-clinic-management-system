@@ -37,6 +37,7 @@
             this.lblAddQty = new System.Windows.Forms.Label();
             this.lblSelectedMedicine = new System.Windows.Forms.Label();
             this.lblRefillTitle = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
             this.pnlRefillAction.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +66,7 @@
             // dgvInventory
             // 
             this.dgvInventory.AllowUserToAddRows = false;
-            this.dgvInventory.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dgvInventory.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventory.Location = new System.Drawing.Point(62, 92);
             this.dgvInventory.Name = "dgvInventory";
@@ -150,10 +151,22 @@
             this.lblRefillTitle.Text = "Update Stock Levels";
             this.lblRefillTitle.Click += new System.EventHandler(this.lblRefillTitle_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(227, 665);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(438, 28);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "* Ayurveda Clinic Management System *";
+            // 
             // UC_ManageInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.pnlRefillAction);
             this.Controls.Add(this.dgvInventory);
             this.Controls.Add(this.txtSearch);
@@ -180,5 +193,6 @@
         private System.Windows.Forms.Label lblAddQty;
         private System.Windows.Forms.Button btnUpdateStock;
         private System.Windows.Forms.TextBox txtAddQuantity;
+        private System.Windows.Forms.Label label5;
     }
 }

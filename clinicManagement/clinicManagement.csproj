@@ -237,6 +237,9 @@
     <EmbeddedResource Include="UC_AddDoctor.resx">
       <DependentUpon>UC_AddDoctor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_AddNewMedicine.resx">
+      <DependentUpon>UC_AddNewMedicine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_AddStaff.resx">
       <DependentUpon>UC_AddStaff.cs</DependentUpon>
     </EmbeddedResource>

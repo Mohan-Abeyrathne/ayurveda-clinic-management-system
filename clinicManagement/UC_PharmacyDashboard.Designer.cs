@@ -39,6 +39,7 @@
             this.lblAssetTitle = new System.Windows.Forms.Label();
             this.lblGridTitle = new System.Windows.Forms.Label();
             this.dgvLowStock = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
             this.pnlAlertsCard.SuspendLayout();
             this.pnlTotalItemsCard.SuspendLayout();
             this.pnlAssetValueCard.SuspendLayout();
@@ -115,7 +116,7 @@
             // 
             // pnlAssetValueCard
             // 
-            this.pnlAssetValueCard.BackColor = System.Drawing.Color.LightGreen;
+            this.pnlAssetValueCard.BackColor = System.Drawing.Color.PaleGreen;
             this.pnlAssetValueCard.Controls.Add(this.lblAssetValue);
             this.pnlAssetValueCard.Controls.Add(this.lblAssetTitle);
             this.pnlAssetValueCard.Location = new System.Drawing.Point(426, 42);
@@ -171,14 +172,26 @@
             this.dgvLowStock.RowHeadersWidth = 51;
             this.dgvLowStock.RowTemplate.Height = 24;
             this.dgvLowStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLowStock.Size = new System.Drawing.Size(561, 271);
+            this.dgvLowStock.Size = new System.Drawing.Size(561, 199);
             this.dgvLowStock.TabIndex = 3;
             this.dgvLowStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLowStock_CellContentClick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(209, 680);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(438, 28);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "* Ayurveda Clinic Management System *";
             // 
             // UC_PharmacyDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.dgvLowStock);
             this.Controls.Add(this.lblGridTitle);
             this.Controls.Add(this.pnlAssetValueCard);
@@ -212,5 +225,6 @@
         private System.Windows.Forms.Label lblAssetValue;
         private System.Windows.Forms.Label lblGridTitle;
         private System.Windows.Forms.DataGridView dgvLowStock;
+        private System.Windows.Forms.Label label5;
     }
 }
