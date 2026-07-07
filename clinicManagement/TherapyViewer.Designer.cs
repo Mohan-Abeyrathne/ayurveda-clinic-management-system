@@ -49,7 +49,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Honeydew;
-            this.label1.Location = new System.Drawing.Point(343, 357);
+            this.label1.Location = new System.Drawing.Point(334, 398);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 22);
             this.label1.TabIndex = 0;
@@ -61,7 +61,7 @@
             this.cmbPatients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbPatients.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmbPatients.FormattingEnabled = true;
-            this.cmbPatients.Location = new System.Drawing.Point(469, 353);
+            this.cmbPatients.Location = new System.Drawing.Point(460, 394);
             this.cmbPatients.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbPatients.Name = "cmbPatients";
             this.cmbPatients.Size = new System.Drawing.Size(290, 26);
@@ -73,7 +73,7 @@
             this.btnViewTherapies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewTherapies.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnViewTherapies.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnViewTherapies.Location = new System.Drawing.Point(809, 345);
+            this.btnViewTherapies.Location = new System.Drawing.Point(800, 386);
             this.btnViewTherapies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewTherapies.Name = "btnViewTherapies";
             this.btnViewTherapies.Size = new System.Drawing.Size(181, 42);
@@ -89,7 +89,7 @@
             this.lblDoshaType.BackColor = System.Drawing.Color.Transparent;
             this.lblDoshaType.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDoshaType.ForeColor = System.Drawing.Color.Honeydew;
-            this.lblDoshaType.Location = new System.Drawing.Point(465, 415);
+            this.lblDoshaType.Location = new System.Drawing.Point(456, 528);
             this.lblDoshaType.Name = "lblDoshaType";
             this.lblDoshaType.Size = new System.Drawing.Size(97, 22);
             this.lblDoshaType.TabIndex = 3;
@@ -113,7 +113,7 @@
             this.Column3});
             this.dgvTherapies.EnableHeadersVisualStyles = false;
             this.dgvTherapies.GridColor = System.Drawing.Color.LightGreen;
-            this.dgvTherapies.Location = new System.Drawing.Point(410, 460);
+            this.dgvTherapies.Location = new System.Drawing.Point(401, 573);
             this.dgvTherapies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvTherapies.Name = "dgvTherapies";
             this.dgvTherapies.RowHeadersWidth = 62;
@@ -148,8 +148,8 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Honeydew;
-            this.label2.Location = new System.Drawing.Point(291, 186);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.label2.Location = new System.Drawing.Point(292, 242);
+            this.label2.Margin = new System.Windows.Forms.Padding(3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(735, 48);
             this.label2.TabIndex = 5;
@@ -177,7 +177,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1281, 828);
+            this.ClientSize = new System.Drawing.Size(1281, 979);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvTherapies);
