@@ -2,6 +2,7 @@
 using System;
 using System.Configuration;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace clinicManagement
@@ -15,6 +16,7 @@ namespace clinicManagement
         public TherapyViewer()
         {
             InitializeComponent();
+            this.Resize += TherapyViewer_Resize;
 
             // ENCAPSULATION - connection string set once
             connStr = ConfigurationManager
@@ -242,6 +244,38 @@ namespace clinicManagement
         private void TherapyViewer_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnViewTherapies_MouseEnter(object sender, EventArgs e)
+        {
+            btnViewTherapies.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnViewTherapies_MouseLeave(object sender, EventArgs e)
+        {
+            btnViewTherapies.ForeColor = Color.Honeydew;
+        }
+        private void CenterAllControls()
+        {
+            int formWidth = this.ClientSize.Width;
+            label2.Left = (formWidth - label2.Width) / 2;
+            int rowWidth = label1.Width + 10 + cmbPatients.Width + 20 + btnViewTherapies.Width;
+            int rowStartX = (formWidth - rowWidth) / 2;
+
+            label1.Left = rowStartX;
+            cmbPatients.Left = label1.Right + 10;
+            btnViewTherapies.Left = cmbPatients.Right + 20;
+
+            label1.Top = 357;
+            cmbPatients.Top = 353;
+            btnViewTherapies.Top = 345;
+
+            lblDoshaType.Left = (formWidth - lblDoshaType.Width) / 2;
+            dgvTherapies.Left = (formWidth - dgvTherapies.Width) / 2;
+        }
+        private void TherapyViewer_Resize (object sender, EventArgs e)
+        {
+            CenterAllControls();
         }
     }
 }

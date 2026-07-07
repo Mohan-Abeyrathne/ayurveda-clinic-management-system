@@ -112,5 +112,21 @@ namespace clinicManagement
             TherapyViewer therapy = new TherapyViewer();
             therapy.Show();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to log out?",
+                "Please confirm logout.",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if(result == DialogResult.Yes)
+            {
+                Form1 loginForm = new Form1();
+                loginForm.Show();
+                this.Close();
+            }
+        }
     }
 }
