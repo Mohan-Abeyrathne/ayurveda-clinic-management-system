@@ -40,5 +40,14 @@ namespace clinicManagement
         {
 
         }
+
+        private void btnEditDeleteAppointment_Click(object sender, EventArgs e)
+        {
+            appoinmentrightpnlsubcontent.Controls.Clear();
+            ucManageAppointment manageAppointment = new ucManageAppointment();
+            manageAppointment.Dock = DockStyle.Fill;
+            appoinmentrightpnlsubcontent.Controls.Add(manageAppointment);
+            manageAppointment.BringToFront();
+        }
     }
 }

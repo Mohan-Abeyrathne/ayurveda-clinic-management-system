@@ -169,6 +169,12 @@
     <Compile Include="ucAddAppointment.Designer.cs">
       <DependentUpon>ucAddAppointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucManageAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucManageAppointment.Designer.cs">
+      <DependentUpon>ucManageAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_AddDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -269,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucAddAppointment.resx">
       <DependentUpon>ucAddAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucManageAppointment.resx">
+      <DependentUpon>ucManageAppointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_AddDoctor.resx">
       <DependentUpon>UC_AddDoctor.cs</DependentUpon>

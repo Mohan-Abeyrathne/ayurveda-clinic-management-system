@@ -79,6 +79,7 @@
             this.btnEditDeleteAppointment.TabIndex = 2;
             this.btnEditDeleteAppointment.Text = "Manage Appointment";
             this.btnEditDeleteAppointment.UseVisualStyleBackColor = true;
+            this.btnEditDeleteAppointment.Click += new System.EventHandler(this.btnEditDeleteAppointment_Click);
             // 
             // btnAddAppointment
             // 
