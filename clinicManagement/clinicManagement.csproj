@@ -235,7 +235,7 @@
       <DependentUpon>PrescriptionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -302,7 +302,7 @@
     <None Include="Resources\image-removebg-preview %2844%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bg-admin-panel.png" />
+    <None Include="Resources\bg_admin_panel.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\side-navbar-admin.png" />
@@ -342,6 +342,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\medi-cd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\bg_admin_panel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

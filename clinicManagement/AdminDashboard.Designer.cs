@@ -80,7 +80,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel2.BackgroundImage = global::clinicManagement.Properties.Resources.side_navbar_admin1;
+            //this.panel2.BackgroundImage = global::clinicManagement.Properties.Resources.side_navbar_admin1;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.btnLogout);
             this.panel2.Controls.Add(this.btnInventory);
@@ -128,7 +128,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::clinicManagement.Properties.Resources.admin_bg_3;
+            //this.panel3.BackgroundImage = global::clinicManagement.Properties.Resources.admin_bg_3;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Location = new System.Drawing.Point(49, 28);
             this.panel3.Name = "panel3";
