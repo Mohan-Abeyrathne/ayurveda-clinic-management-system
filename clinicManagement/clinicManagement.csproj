@@ -107,6 +107,7 @@
     <Compile Include="DashboardHomeForm.Designer.cs">
       <DependentUpon>DashboardHomeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database\DBConnection %282%29.cs" />
     <Compile Include="Database\DBConnection.cs" />
     <Compile Include="DiagnosisForm.cs">
       <SubType>Form</SubType>
@@ -151,6 +152,12 @@
     </Compile>
     <Compile Include="ManageStaffForm.Designer.cs">
       <DependentUpon>ManageStaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrescriptionForm.Designer.cs">
+      <DependentUpon>PrescriptionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -224,6 +231,9 @@
     <EmbeddedResource Include="ManageStaffForm.resx">
       <DependentUpon>ManageStaffForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrescriptionForm.resx">
+      <DependentUpon>PrescriptionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -255,6 +265,7 @@
     <EmbeddedResource Include="UC_ViewAllStaff.resx">
       <DependentUpon>UC_ViewAllStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClinicManagementSystem.csproj" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
