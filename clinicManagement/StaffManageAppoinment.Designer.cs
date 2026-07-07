@@ -98,6 +98,7 @@
             this.appoinmentrightpnlsubcontent.Name = "appoinmentrightpnlsubcontent";
             this.appoinmentrightpnlsubcontent.Size = new System.Drawing.Size(903, 745);
             this.appoinmentrightpnlsubcontent.TabIndex = 1;
+            this.appoinmentrightpnlsubcontent.Paint += new System.Windows.Forms.PaintEventHandler(this.appoinmentrightpnlsubcontent_Paint);
             // 
             // StaffManageAppoinment
             // 
@@ -107,6 +108,7 @@
             this.Controls.Add(this.appoinmentrightpnlsubcontent);
             this.Controls.Add(this.oppoinmentpnlsubnavigation);
             this.Name = "StaffManageAppoinment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "StaffManageAppoinment";
             this.Load += new System.EventHandler(this.StaffManageAppoinment_Load);
             this.oppoinmentpnlsubnavigation.ResumeLayout(false);
