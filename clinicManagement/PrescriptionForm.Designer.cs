@@ -1,4 +1,4 @@
-﻿namespace ClinicManagementSystem
+﻿namespace ClinicManagement
 {
     partial class PrescriptionForm
     {
@@ -383,7 +383,7 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.BackColor = System.Drawing.Color.PaleGreen;
             this.btnPrint.Location = new System.Drawing.Point(541, 814);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(137, 38);

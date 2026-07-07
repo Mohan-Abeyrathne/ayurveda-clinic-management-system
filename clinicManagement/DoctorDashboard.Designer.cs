@@ -98,6 +98,7 @@
             this.btnPrescription.TabIndex = 3;
             this.btnPrescription.Text = "Prescriptions";
             this.btnPrescription.UseVisualStyleBackColor = false;
+            this.btnPrescription.Click += new System.EventHandler(this.btnPrescription_Click);
             this.btnPrescription.MouseEnter += new System.EventHandler(this.btnPrescription_MouseEnter);
             this.btnPrescription.MouseLeave += new System.EventHandler(this.btnPrescription_MouseLeave);
             // 
@@ -165,7 +166,7 @@
             this.label4.ForeColor = System.Drawing.Color.Honeydew;
             this.label4.Location = new System.Drawing.Point(516, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(386, 65);
+            this.label4.Size = new System.Drawing.Size(377, 65);
             this.label4.TabIndex = 8;
             this.label4.Text = "\"ආයුබෝවන්!\"";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
