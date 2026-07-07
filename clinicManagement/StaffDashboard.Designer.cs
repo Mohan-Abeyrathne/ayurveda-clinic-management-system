@@ -132,11 +132,11 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(-3, 308);
+            this.button2.Location = new System.Drawing.Point(0, 303);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(310, 63);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Book Appointment";
+            this.button2.Text = "Appointment Management";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
