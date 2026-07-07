@@ -167,6 +167,12 @@
     <Compile Include="StaffDashboard.Designer.cs">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="TherapyViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TherapyViewer.Designer.cs">
+      <DependentUpon>TherapyViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_AddDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -246,6 +252,9 @@
     </Compile>
     <EmbeddedResource Include="StaffDashboard.resx">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TherapyViewer.resx">
+      <DependentUpon>TherapyViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_AddDoctor.resx">
       <DependentUpon>UC_AddDoctor.cs</DependentUpon>
