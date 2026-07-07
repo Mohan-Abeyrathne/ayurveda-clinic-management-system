@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace clinicManagement
 {
-    public partial class StaffManageAppoinment : Form
+    public partial class ucAddAppointment : UserControl
     {
-        private bool isLoggingOut = false; // flag for login
-        private Form activeForm = null;
-        public StaffManageAppoinment()
+        public ucAddAppointment()
         {
             InitializeComponent();
         }
-
-
-        private void btnAddAppointment_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

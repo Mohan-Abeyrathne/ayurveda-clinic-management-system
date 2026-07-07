@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.oppoinmentpnlsubnavigation = new System.Windows.Forms.Panel();
-            this.btnAddAppointment = new System.Windows.Forms.Button();
-            this.btnEditDeleteAppointment = new System.Windows.Forms.Button();
-            this.btnViewAllAppointments = new System.Windows.Forms.Button();
             this.btnCloseForm = new System.Windows.Forms.Button();
+            this.btnViewAllAppointments = new System.Windows.Forms.Button();
+            this.btnEditDeleteAppointment = new System.Windows.Forms.Button();
+            this.btnAddAppointment = new System.Windows.Forms.Button();
             this.appoinmentrightpnlsubcontent = new System.Windows.Forms.Panel();
             this.oppoinmentpnlsubnavigation.SuspendLayout();
             this.SuspendLayout();
@@ -50,25 +50,15 @@
             this.oppoinmentpnlsubnavigation.Size = new System.Drawing.Size(323, 745);
             this.oppoinmentpnlsubnavigation.TabIndex = 0;
             // 
-            // btnAddAppointment
+            // btnCloseForm
             // 
-            this.btnAddAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAppointment.Location = new System.Drawing.Point(79, 191);
-            this.btnAddAppointment.Name = "btnAddAppointment";
-            this.btnAddAppointment.Size = new System.Drawing.Size(162, 78);
-            this.btnAddAppointment.TabIndex = 1;
-            this.btnAddAppointment.Text = "Add Appointment";
-            this.btnAddAppointment.UseVisualStyleBackColor = true;
-            // 
-            // btnEditDeleteAppointment
-            // 
-            this.btnEditDeleteAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditDeleteAppointment.Location = new System.Drawing.Point(79, 303);
-            this.btnEditDeleteAppointment.Name = "btnEditDeleteAppointment";
-            this.btnEditDeleteAppointment.Size = new System.Drawing.Size(162, 78);
-            this.btnEditDeleteAppointment.TabIndex = 2;
-            this.btnEditDeleteAppointment.Text = "Manage Appointment";
-            this.btnEditDeleteAppointment.UseVisualStyleBackColor = true;
+            this.btnCloseForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseForm.Location = new System.Drawing.Point(79, 538);
+            this.btnCloseForm.Name = "btnCloseForm";
+            this.btnCloseForm.Size = new System.Drawing.Size(162, 78);
+            this.btnCloseForm.TabIndex = 4;
+            this.btnCloseForm.Text = "Close";
+            this.btnCloseForm.UseVisualStyleBackColor = true;
             // 
             // btnViewAllAppointments
             // 
@@ -80,15 +70,26 @@
             this.btnViewAllAppointments.Text = "View All Appointment";
             this.btnViewAllAppointments.UseVisualStyleBackColor = true;
             // 
-            // btnCloseForm
+            // btnEditDeleteAppointment
             // 
-            this.btnCloseForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseForm.Location = new System.Drawing.Point(79, 538);
-            this.btnCloseForm.Name = "btnCloseForm";
-            this.btnCloseForm.Size = new System.Drawing.Size(162, 78);
-            this.btnCloseForm.TabIndex = 4;
-            this.btnCloseForm.Text = "Close";
-            this.btnCloseForm.UseVisualStyleBackColor = true;
+            this.btnEditDeleteAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditDeleteAppointment.Location = new System.Drawing.Point(79, 303);
+            this.btnEditDeleteAppointment.Name = "btnEditDeleteAppointment";
+            this.btnEditDeleteAppointment.Size = new System.Drawing.Size(162, 78);
+            this.btnEditDeleteAppointment.TabIndex = 2;
+            this.btnEditDeleteAppointment.Text = "Manage Appointment";
+            this.btnEditDeleteAppointment.UseVisualStyleBackColor = true;
+            // 
+            // btnAddAppointment
+            // 
+            this.btnAddAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAppointment.Location = new System.Drawing.Point(79, 191);
+            this.btnAddAppointment.Name = "btnAddAppointment";
+            this.btnAddAppointment.Size = new System.Drawing.Size(162, 78);
+            this.btnAddAppointment.TabIndex = 1;
+            this.btnAddAppointment.Text = "Add Appointment";
+            this.btnAddAppointment.UseVisualStyleBackColor = true;
+            this.btnAddAppointment.Click += new System.EventHandler(this.btnAddAppointment_Click);
             // 
             // appoinmentrightpnlsubcontent
             // 
