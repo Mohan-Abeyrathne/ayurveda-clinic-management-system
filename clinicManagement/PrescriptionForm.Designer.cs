@@ -145,9 +145,9 @@
             // 
             this.btnSearch.BackColor = System.Drawing.Color.PaleGreen;
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(566, 39);
+            this.btnSearch.Location = new System.Drawing.Point(566, 37);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(75, 25);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -180,7 +180,7 @@
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox2.Location = new System.Drawing.Point(12, 208);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(677, 304);
+            this.groupBox2.Size = new System.Drawing.Size(677, 327);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Prescription Details";
@@ -188,12 +188,13 @@
             // 
             // btnAddMedicine
             // 
-            this.btnAddMedicine.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnAddMedicine.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddMedicine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMedicine.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddMedicine.Location = new System.Drawing.Point(255, 265);
+            this.btnAddMedicine.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddMedicine.Location = new System.Drawing.Point(255, 271);
             this.btnAddMedicine.Name = "btnAddMedicine";
-            this.btnAddMedicine.Size = new System.Drawing.Size(140, 24);
+            this.btnAddMedicine.Size = new System.Drawing.Size(140, 33);
             this.btnAddMedicine.TabIndex = 5;
             this.btnAddMedicine.Text = "Add Medicine";
             this.btnAddMedicine.UseVisualStyleBackColor = false;
@@ -316,7 +317,7 @@
             this.Frequency,
             this.Duration,
             this.Instructions});
-            this.dgvPrescription.Location = new System.Drawing.Point(12, 518);
+            this.dgvPrescription.Location = new System.Drawing.Point(12, 541);
             this.dgvPrescription.Name = "dgvPrescription";
             this.dgvPrescription.RowHeadersWidth = 51;
             this.dgvPrescription.RowTemplate.Height = 24;
@@ -361,7 +362,9 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Location = new System.Drawing.Point(25, 814);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(137, 38);
@@ -372,7 +375,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnClear.BackColor = System.Drawing.Color.Transparent;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnClear.Location = new System.Drawing.Point(288, 814);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(137, 38);
@@ -383,7 +388,9 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnPrint.Location = new System.Drawing.Point(541, 814);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(137, 38);
