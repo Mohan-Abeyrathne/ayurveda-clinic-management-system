@@ -233,6 +233,46 @@ namespace clinicManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_07_07_225940 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-07-07 225940", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_07_07_230439 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-07-07 230439", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_07_07_2304391 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-07-07 2304391", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_07_07_230920 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-07-07 230920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap side_navbar_admin {
             get {
                 object obj = ResourceManager.GetObject("side-navbar-admin", resourceCulture);
