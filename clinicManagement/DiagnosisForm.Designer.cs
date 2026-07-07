@@ -129,19 +129,19 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGray;
             this.dgvDiagnosis.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDiagnosis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDiagnosis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDiagnosis.BackgroundColor = System.Drawing.Color.White;
             this.dgvDiagnosis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDiagnosis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiagnosis.Location = new System.Drawing.Point(137, 805);
+            this.dgvDiagnosis.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvDiagnosis.Location = new System.Drawing.Point(0, 889);
             this.dgvDiagnosis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDiagnosis.Name = "dgvDiagnosis";
             this.dgvDiagnosis.RowHeadersVisible = false;
             this.dgvDiagnosis.RowHeadersWidth = 51;
             this.dgvDiagnosis.RowTemplate.Height = 24;
             this.dgvDiagnosis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDiagnosis.Size = new System.Drawing.Size(756, 117);
+            this.dgvDiagnosis.Size = new System.Drawing.Size(1317, 117);
             this.dgvDiagnosis.TabIndex = 21;
             this.dgvDiagnosis.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellClick);
             this.dgvDiagnosis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosis_CellContentClick);
@@ -411,7 +411,7 @@
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1317, 956);
+            this.ClientSize = new System.Drawing.Size(1317, 1006);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);

@@ -76,10 +76,23 @@ namespace clinicManagement
                         cmd.Parameters.AddWithValue("@date", diagnosis.RecordDate);
 
                         // Runs the insert operation on the MySQL server layout engine
-                        cmd.ExecuteNonQuery();
+                        int rows = cmd.ExecuteNonQuery();
+
+                        if (rows > 0)
+                        {
+                            MessageBox.Show("Diagnosis Saved Successfully!", "Success");
+
+                            // Refresh DataGridView
+                            LoadDiagnosisRecords();
+
+                            // Clear the form
+                            btnClear_Click(sender, e);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No record was saved.");
+                        }
                     }
-                    MessageBox.Show("Diagnosis Saved Successfully!", "Success");
-                    conn.Close();
                 }
             }
             catch (Exception ex)
@@ -391,6 +404,7 @@ Note: This is an automatically generated electronic report file.";
         {
             CenterAllControls();
         }
+
     }
 }
 
