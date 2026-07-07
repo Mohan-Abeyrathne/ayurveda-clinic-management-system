@@ -154,7 +154,7 @@ namespace clinicManagement
                     string query = @"SELECT 
                         TherapyName  AS Therapy,
                         Description  AS Description,
-                        Duration     AS Duration
+                        DurationMinutes    AS Duration
                         FROM therapies
                         WHERE SuitableDosha LIKE @dosha";
 
