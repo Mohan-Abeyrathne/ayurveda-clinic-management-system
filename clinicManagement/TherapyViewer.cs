@@ -1,26 +1,22 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
+using clinicManagement.Database;
 
 namespace clinicManagement
 {
     // INHERITANCE - TherapyViewer inherits from Form
     public partial class TherapyViewer : Form
     {
-        // ENCAPSULATION - private connection string
-        private string connStr;
+        // ENCAPSULATION - using DBConnection class
+        private DBConnection dbConnection = new DBConnection();
 
         public TherapyViewer()
         {
             InitializeComponent();
             this.Resize += TherapyViewer_Resize;
-
-            // ENCAPSULATION - connection string set once
-            connStr = ConfigurationManager
-                .ConnectionStrings["ClinicDB"].ConnectionString;
         }
 
         private void TherapyViewer_Load(object sender, EventArgs e)
@@ -34,7 +30,7 @@ namespace clinicManagement
         {
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(connStr))
+                using (MySqlConnection conn = dbConnection.GetConnection())
                 {
                     string query = "SELECT PatientID, FullName FROM patients";
                     MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
@@ -91,7 +87,7 @@ namespace clinicManagement
                     return dosha;
                 }
 
-                using (MySqlConnection conn = new MySqlConnection(connStr))
+                using (MySqlConnection conn = dbConnection.GetConnection())
                 {
                     string query = "SELECT DoshaType FROM patients " +
                                    "WHERE PatientID = @id";
@@ -149,12 +145,12 @@ namespace clinicManagement
                     return;
                 }
 
-                using (MySqlConnection conn = new MySqlConnection(connStr))
+                using (MySqlConnection conn = dbConnection.GetConnection())
                 {
                     string query = @"SELECT 
-                        TherapyName  AS Therapy,
-                        Description  AS Description,
-                        DurationMinutes    AS Duration
+                        TherapyName     AS Therapy,
+                        Description     AS Description,
+                        DurationMinutes AS Duration
                         FROM therapies
                         WHERE SuitableDosha LIKE @dosha";
 
@@ -203,6 +199,7 @@ namespace clinicManagement
         // POLYMORPHISM - overriding Form's button click event
         private void btnViewTherapies_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Button clicked!");
             try
             {
                 if (cmbPatients.SelectedValue == null)
@@ -241,11 +238,6 @@ namespace clinicManagement
             }
         }
 
-        private void TherapyViewer_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnViewTherapies_MouseEnter(object sender, EventArgs e)
         {
             btnViewTherapies.ForeColor = Color.DarkGreen;
@@ -255,6 +247,7 @@ namespace clinicManagement
         {
             btnViewTherapies.ForeColor = Color.Honeydew;
         }
+
         private void CenterAllControls()
         {
             int formWidth = this.ClientSize.Width;
@@ -273,7 +266,8 @@ namespace clinicManagement
             lblDoshaType.Left = (formWidth - lblDoshaType.Width) / 2;
             dgvTherapies.Left = (formWidth - dgvTherapies.Width) / 2;
         }
-        private void TherapyViewer_Resize (object sender, EventArgs e)
+
+        private void TherapyViewer_Resize(object sender, EventArgs e)
         {
             CenterAllControls();
         }
