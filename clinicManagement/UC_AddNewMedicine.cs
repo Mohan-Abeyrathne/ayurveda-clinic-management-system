@@ -16,5 +16,10 @@ namespace clinicManagement
         {
             InitializeComponent();
         }
+
+        private void UC_AddNewMedicine_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
