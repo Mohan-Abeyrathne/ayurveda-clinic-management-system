@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClinicManagement;
 
 namespace clinicManagement
 {
@@ -97,6 +98,13 @@ namespace clinicManagement
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPrescription_Click(object sender, EventArgs e)
+        {
+            PrescriptionForm PrescriptionWindow = new PrescriptionForm();
+
+            PrescriptionWindow.Show();
         }
     }
 }
