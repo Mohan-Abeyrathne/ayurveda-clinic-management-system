@@ -121,4 +121,22 @@
   <data name="bg model 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg model 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bg_admin_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_admin_panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doc_cd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doc-cd1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medi_cd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medi-cd1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patient_cd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\patient-cd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot 2026_06_18_184049" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2026-06-18 184049.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="staff_cd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\staff-cd1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
