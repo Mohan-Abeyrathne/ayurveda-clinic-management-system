@@ -405,6 +405,55 @@ Note: This is an automatically generated electronic report file.";
             CenterAllControls();
         }
 
+        private void btnSave_MouseEnter(object sender, EventArgs e)
+        {
+            btnSave.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnSave_MouseLeave(object sender, EventArgs e)
+        {
+            btnSave.ForeColor = Color.Honeydew;
+        }
+
+        private void btnUpdate_MouseEnter(object sender, EventArgs e)
+        {
+            btnUpdate.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnUpdate_MouseLeave(object sender, EventArgs e)
+        {
+            btnUpdate.ForeColor = Color.Honeydew;
+        }
+
+        private void btnDelete_MouseEnter(object sender, EventArgs e)
+        {
+            btnDelete.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnDelete_MouseLeave(object sender, EventArgs e)
+        {
+            btnDelete.ForeColor = Color.Honeydew;
+        }
+
+        private void btnReport_MouseEnter(object sender, EventArgs e)
+        {
+            btnReport.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnReport_MouseLeave(object sender, EventArgs e)
+        {
+            btnReport.ForeColor = Color.Honeydew;
+        }
+
+        private void btnClear_MouseEnter(object sender, EventArgs e)
+        {
+            btnClear.ForeColor = Color.DarkGreen;
+        }
+
+        private void btnClear_MouseLeave(object sender, EventArgs e)
+        {
+            btnClear.ForeColor = Color.Honeydew;
+        }
     }
 }
 
