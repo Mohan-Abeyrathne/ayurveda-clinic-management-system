@@ -49,5 +49,10 @@ namespace clinicManagement
             appoinmentrightpnlsubcontent.Controls.Add(manageAppointment);
             manageAppointment.BringToFront();
         }
+
+        private void btnCloseForm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

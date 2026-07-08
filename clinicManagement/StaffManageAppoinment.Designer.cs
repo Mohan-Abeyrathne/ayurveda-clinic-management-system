@@ -30,7 +30,6 @@
         {
             this.oppoinmentpnlsubnavigation = new System.Windows.Forms.Panel();
             this.btnCloseForm = new System.Windows.Forms.Button();
-            this.btnViewAllAppointments = new System.Windows.Forms.Button();
             this.btnEditDeleteAppointment = new System.Windows.Forms.Button();
             this.btnAddAppointment = new System.Windows.Forms.Button();
             this.appoinmentrightpnlsubcontent = new System.Windows.Forms.Panel();
@@ -41,7 +40,6 @@
             // 
             this.oppoinmentpnlsubnavigation.BackColor = System.Drawing.Color.LightGray;
             this.oppoinmentpnlsubnavigation.Controls.Add(this.btnCloseForm);
-            this.oppoinmentpnlsubnavigation.Controls.Add(this.btnViewAllAppointments);
             this.oppoinmentpnlsubnavigation.Controls.Add(this.btnEditDeleteAppointment);
             this.oppoinmentpnlsubnavigation.Controls.Add(this.btnAddAppointment);
             this.oppoinmentpnlsubnavigation.Dock = System.Windows.Forms.DockStyle.Left;
@@ -53,27 +51,18 @@
             // btnCloseForm
             // 
             this.btnCloseForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseForm.Location = new System.Drawing.Point(79, 538);
+            this.btnCloseForm.Location = new System.Drawing.Point(79, 427);
             this.btnCloseForm.Name = "btnCloseForm";
             this.btnCloseForm.Size = new System.Drawing.Size(162, 78);
             this.btnCloseForm.TabIndex = 4;
             this.btnCloseForm.Text = "Close";
             this.btnCloseForm.UseVisualStyleBackColor = true;
-            // 
-            // btnViewAllAppointments
-            // 
-            this.btnViewAllAppointments.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAllAppointments.Location = new System.Drawing.Point(79, 417);
-            this.btnViewAllAppointments.Name = "btnViewAllAppointments";
-            this.btnViewAllAppointments.Size = new System.Drawing.Size(162, 78);
-            this.btnViewAllAppointments.TabIndex = 3;
-            this.btnViewAllAppointments.Text = "View All Appointment";
-            this.btnViewAllAppointments.UseVisualStyleBackColor = true;
+            this.btnCloseForm.Click += new System.EventHandler(this.btnCloseForm_Click);
             // 
             // btnEditDeleteAppointment
             // 
             this.btnEditDeleteAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditDeleteAppointment.Location = new System.Drawing.Point(79, 303);
+            this.btnEditDeleteAppointment.Location = new System.Drawing.Point(79, 314);
             this.btnEditDeleteAppointment.Name = "btnEditDeleteAppointment";
             this.btnEditDeleteAppointment.Size = new System.Drawing.Size(162, 78);
             this.btnEditDeleteAppointment.TabIndex = 2;
@@ -84,7 +73,7 @@
             // btnAddAppointment
             // 
             this.btnAddAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAppointment.Location = new System.Drawing.Point(79, 191);
+            this.btnAddAppointment.Location = new System.Drawing.Point(79, 208);
             this.btnAddAppointment.Name = "btnAddAppointment";
             this.btnAddAppointment.Size = new System.Drawing.Size(162, 78);
             this.btnAddAppointment.TabIndex = 1;
@@ -121,7 +110,6 @@
 
         private System.Windows.Forms.Panel oppoinmentpnlsubnavigation;
         private System.Windows.Forms.Button btnCloseForm;
-        private System.Windows.Forms.Button btnViewAllAppointments;
         private System.Windows.Forms.Button btnEditDeleteAppointment;
         private System.Windows.Forms.Button btnAddAppointment;
         private System.Windows.Forms.Panel appoinmentrightpnlsubcontent;

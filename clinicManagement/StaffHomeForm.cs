@@ -26,5 +26,14 @@ namespace clinicManagement
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (this.ParentForm is StaffDashboard mainDashboard)
+            {
+                this.Close();
+
+            }
+        }
     }
 }
