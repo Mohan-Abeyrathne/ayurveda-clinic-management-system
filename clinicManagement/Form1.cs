@@ -56,36 +56,27 @@ namespace clinicManagement
                                 string fullName = reader["FullName"].ToString();
                                 string role = reader["UserRole"].ToString();
 
-                                // Base variable
+                                // Base variable 
                                 User loggedInUser = null;
 
-                                // Check for the role and open the correct dashboard panel
                                 if (role == "admin")
                                 {
                                     loggedInUser = new Admin(inputUser, fullName);
-                                    MessageBox.Show($"Welcome, : {loggedInUser.FullName}!", "Login Success");
-
-                                    AdminDashboard adminPanel = new AdminDashboard();
-                                    adminPanel.Show();
                                 }
                                 else if (role == "doctor")
                                 {
                                     loggedInUser = new Doctor(inputUser, fullName);
-                                    MessageBox.Show($"Welcome, . {loggedInUser.FullName}!", "Login Success");
-
-                                    DoctorDashboard doctorPanel = new DoctorDashboard();
-                                    doctorPanel.Show();
                                 }
                                 else if (role == "staff")
                                 {
                                     loggedInUser = new Staff(inputUser, fullName);
-                                    MessageBox.Show($"Welcome, Staff: {loggedInUser.FullName}!", "Login Success");
-
-                                    StaffDashboard staffPanel = new StaffDashboard();
-                                    staffPanel.Show();
                                 }
 
-                                this.Hide();
+                                // Polymorphism
+                                if (loggedInUser != null)
+                                {
+                                    loggedInUser.LaunchDashboard(this);
+                                }
                             }
                             else
                             {
