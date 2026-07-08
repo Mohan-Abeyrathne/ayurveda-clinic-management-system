@@ -40,7 +40,7 @@
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBuyingPrice = new System.Windows.Forms.Label();
-            this.txt = new System.Windows.Forms.TextBox();
+            this.txtBuying = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSellingPrice = new System.Windows.Forms.TextBox();
             this.dtpExpiryDate = new System.Windows.Forms.DateTimePicker();
@@ -69,6 +69,7 @@
             this.txtMedicineID.Name = "txtMedicineID";
             this.txtMedicineID.Size = new System.Drawing.Size(305, 28);
             this.txtMedicineID.TabIndex = 18;
+            this.txtMedicineID.TextChanged += new System.EventHandler(this.txtMedicineID_TextChanged);
             // 
             // label1
             // 
@@ -99,6 +100,7 @@
             this.txtMedicineName.Name = "txtMedicineName";
             this.txtMedicineName.Size = new System.Drawing.Size(305, 28);
             this.txtMedicineName.TabIndex = 21;
+            this.txtMedicineName.TextChanged += new System.EventHandler(this.txtMedicineName_TextChanged);
             // 
             // label3
             // 
@@ -118,10 +120,17 @@
             this.txtBatchNumber.Name = "txtBatchNumber";
             this.txtBatchNumber.Size = new System.Drawing.Size(305, 28);
             this.txtBatchNumber.TabIndex = 23;
+            this.txtBatchNumber.TextChanged += new System.EventHandler(this.txtBatchNumber_TextChanged);
             // 
             // cmbCategory
             // 
             this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.Items.AddRange(new object[] {
+            "Tablets",
+            "Syrups",
+            "Oils",
+            "Powders",
+            "Capsules"});
             this.cmbCategory.Location = new System.Drawing.Point(246, 269);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(304, 24);
@@ -168,13 +177,13 @@
             this.txtBuyingPrice.TabIndex = 29;
             this.txtBuyingPrice.Text = "Buying Price (Rs.)";
             // 
-            // txt
+            // txtBuying
             // 
-            this.txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt.Location = new System.Drawing.Point(245, 405);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(305, 28);
-            this.txt.TabIndex = 31;
+            this.txtBuying.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuying.Location = new System.Drawing.Point(245, 405);
+            this.txtBuying.Name = "txtBuying";
+            this.txtBuying.Size = new System.Drawing.Size(305, 28);
+            this.txtBuying.TabIndex = 31;
             // 
             // label7
             // 
@@ -222,6 +231,7 @@
             this.btnSaveMedicine.TabIndex = 36;
             this.btnSaveMedicine.Text = "Add Medicine";
             this.btnSaveMedicine.UseVisualStyleBackColor = true;
+            this.btnSaveMedicine.Click += new System.EventHandler(this.btnSaveMedicine_Click);
             // 
             // btnClearFields
             // 
@@ -232,6 +242,7 @@
             this.btnClearFields.TabIndex = 37;
             this.btnClearFields.Text = "Clear Fields";
             this.btnClearFields.UseVisualStyleBackColor = true;
+            this.btnClearFields.Click += new System.EventHandler(this.btnClearFields_Click);
             // 
             // panel1
             // 
@@ -257,7 +268,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtSellingPrice);
-            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtBuying);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.txtBatchNumber);
@@ -289,7 +300,7 @@
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label txtBuyingPrice;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.TextBox txtBuying;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtSellingPrice;
         private System.Windows.Forms.DateTimePicker dtpExpiryDate;
