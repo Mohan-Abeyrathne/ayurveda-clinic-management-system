@@ -113,6 +113,16 @@ namespace clinicManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_staff_dashboard_2 {
+            get {
+                object obj = ResourceManager.GetObject("bg-staff-dashboard-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doc_cd {
             get {
                 object obj = ResourceManager.GetObject("doc-cd", resourceCulture);
@@ -216,6 +226,46 @@ namespace clinicManagement.Properties {
         internal static System.Drawing.Bitmap Screenshot_2026_06_18_2121001 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2026-06-18 2121001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_07_07_225940 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-07-07 225940", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_07_07_230439 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-07-07 230439", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_07_07_2304391 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-07-07 2304391", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_07_07_230920 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-07-07 230920", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

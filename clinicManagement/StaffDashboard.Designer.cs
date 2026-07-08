@@ -39,7 +39,9 @@
             this.btnPatientManagement = new System.Windows.Forms.Button();
             this.btnDoshaProfiler = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnlMainContent = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.pnlMainContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +50,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(916, 9);
+            this.label1.Location = new System.Drawing.Point(902, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(383, 28);
             this.label1.TabIndex = 0;
@@ -71,6 +73,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(322, 723);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -81,7 +84,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(237, 182);
             this.panel2.TabIndex = 6;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnLogOut
             // 
@@ -130,11 +132,11 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(-3, 308);
+            this.button2.Location = new System.Drawing.Point(0, 303);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(310, 63);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Book Appointment";
+            this.button2.Text = "Appointment Management";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -177,6 +179,18 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "* Ayurveda Clinic Management System *";
             // 
+            // pnlMainContent
+            // 
+            this.pnlMainContent.BackgroundImage = global::clinicManagement.Properties.Resources.bg_staff_dashboard_2;
+            this.pnlMainContent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlMainContent.Controls.Add(this.label1);
+            this.pnlMainContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainContent.Location = new System.Drawing.Point(0, 0);
+            this.pnlMainContent.Name = "pnlMainContent";
+            this.pnlMainContent.Size = new System.Drawing.Size(1306, 723);
+            this.pnlMainContent.TabIndex = 8;
+            this.pnlMainContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
             // StaffDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,13 +200,15 @@
             this.ClientSize = new System.Drawing.Size(1306, 723);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnlMainContent);
             this.DoubleBuffered = true;
             this.Name = "StaffDashboard";
             this.Text = "StaffDashboard";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StaffDashboard_FormClosed);
             this.Load += new System.EventHandler(this.StaffDashboard_Load);
             this.panel1.ResumeLayout(false);
+            this.pnlMainContent.ResumeLayout(false);
+            this.pnlMainContent.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +226,6 @@
         private System.Windows.Forms.Button btnMainDashboard;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnlMainContent;
     }
 }

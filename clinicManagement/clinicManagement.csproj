@@ -139,11 +139,47 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="staffAppointmentform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffAppointmentform.Designer.cs">
+      <DependentUpon>staffAppointmentform.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StaffDashboard.Designer.cs">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDoshaProfiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffDoshaProfiler.Designer.cs">
+      <DependentUpon>StaffDoshaProfiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffHomeForm.Designer.cs">
+      <DependentUpon>StaffHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffManageAppoinment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffManageAppoinment.Designer.cs">
+      <DependentUpon>StaffManageAppoinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddAppointment.Designer.cs">
+      <DependentUpon>ucAddAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucManageAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucManageAppointment.Designer.cs">
+      <DependentUpon>ucManageAppointment.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_AddDoctor.cs">
       <SubType>UserControl</SubType>
@@ -231,8 +267,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="staffAppointmentform.resx">
+      <DependentUpon>staffAppointmentform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffDashboard.resx">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDoshaProfiler.resx">
+      <DependentUpon>StaffDoshaProfiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffHomeForm.resx">
+      <DependentUpon>StaffHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffManageAppoinment.resx">
+      <DependentUpon>StaffManageAppoinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddAppointment.resx">
+      <DependentUpon>ucAddAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucManageAppointment.resx">
+      <DependentUpon>ucManageAppointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_AddDoctor.resx">
       <DependentUpon>UC_AddDoctor.cs</DependentUpon>
@@ -337,6 +391,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\medi-cd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-staff-dashboard-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-07-07 225940.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-07-07 230439.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-07-07 2304391.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-07-07 230920.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
