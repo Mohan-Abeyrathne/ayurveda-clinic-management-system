@@ -234,5 +234,66 @@ namespace clinicManagement
             btnNext.Visible = true;
             btnFinish.Visible = false;
         }
+
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            int vata = 0;
+            int pitta = 0;
+            int kapha = 0;
+
+            // Count answers
+            foreach (Control c in this.Controls)
+            {
+                if (c is GroupBox)
+                {
+                    GroupBox grp = (GroupBox)c;
+
+                    foreach (Control r in grp.Controls)
+                    {
+                        if (r is RadioButton rb && rb.Checked)
+                        {
+                            if (rb.Tag != null)
+                            {
+                                switch (rb.Tag.ToString())
+                                {
+                                    case "Vata":
+                                        vata++;
+                                        break;
+
+                                    case "Pitta":
+                                        pitta++;
+                                        break;
+
+                                    case "Kapha":
+                                        kapha++;
+                                        break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            string dominant;
+
+            if (vata >= pitta && vata >= kapha)
+                dominant = "Vata";
+            else if (pitta >= vata && pitta >= kapha)
+                dominant = "Pitta";
+            else
+                dominant = "Kapha";
+
+            MessageBox.Show(
+                "Assessment Completed\n\n" +
+                "Vata : " + vata +
+                "\nPitta : " + pitta +
+                "\nKapha : " + kapha +
+                "\n\nDominant Dosha : " + dominant,
+                "Dosha Result",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        
+
+        }
     }
 }

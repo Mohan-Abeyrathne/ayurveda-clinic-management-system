@@ -383,5 +383,8 @@
   <ItemGroup>
     <None Include="Resources\bg-staff-dashboard-2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosha-bg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

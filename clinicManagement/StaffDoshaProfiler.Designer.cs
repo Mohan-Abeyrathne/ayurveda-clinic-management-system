@@ -32,7 +32,6 @@
             this.lblSelectPatient = new System.Windows.Forms.Label();
             this.btnLoadPatient = new System.Windows.Forms.Button();
             this.grpPatientDetails = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.lblCurrentDoshaValue = new System.Windows.Forms.Label();
             this.lblPatientBloodValue = new System.Windows.Forms.Label();
             this.lblPatientGenderValue = new System.Windows.Forms.Label();
@@ -48,14 +47,14 @@
             this.lblPatientID = new System.Windows.Forms.Label();
             this.cmbPatient = new System.Windows.Forms.ComboBox();
             this.grpQuestions = new System.Windows.Forms.GroupBox();
-            this.lblQuestionNo = new System.Windows.Forms.Label();
-            this.lblQuestion = new System.Windows.Forms.Label();
-            this.rbOption1 = new System.Windows.Forms.RadioButton();
-            this.rbOption2 = new System.Windows.Forms.RadioButton();
-            this.rbOption3 = new System.Windows.Forms.RadioButton();
-            this.btnPrevious = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
             this.btnFinish = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.rbOption3 = new System.Windows.Forms.RadioButton();
+            this.rbOption2 = new System.Windows.Forms.RadioButton();
+            this.rbOption1 = new System.Windows.Forms.RadioButton();
+            this.lblQuestion = new System.Windows.Forms.Label();
+            this.lblQuestionNo = new System.Windows.Forms.Label();
             this.grpPatientDetails.SuspendLayout();
             this.grpQuestions.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +64,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblTitle.Location = new System.Drawing.Point(829, 39);
+            this.lblTitle.Location = new System.Drawing.Point(502, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(276, 38);
             this.lblTitle.TabIndex = 0;
@@ -76,7 +75,7 @@
             // 
             this.lblSelectPatient.AutoSize = true;
             this.lblSelectPatient.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelectPatient.Location = new System.Drawing.Point(359, 102);
+            this.lblSelectPatient.Location = new System.Drawing.Point(365, 133);
             this.lblSelectPatient.Name = "lblSelectPatient";
             this.lblSelectPatient.Size = new System.Drawing.Size(120, 23);
             this.lblSelectPatient.TabIndex = 1;
@@ -85,9 +84,9 @@
             // 
             // btnLoadPatient
             // 
-            this.btnLoadPatient.Location = new System.Drawing.Point(485, 128);
+            this.btnLoadPatient.Location = new System.Drawing.Point(653, 133);
             this.btnLoadPatient.Name = "btnLoadPatient";
-            this.btnLoadPatient.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadPatient.Size = new System.Drawing.Size(75, 25);
             this.btnLoadPatient.TabIndex = 3;
             this.btnLoadPatient.Text = "Load Patient";
             this.btnLoadPatient.UseVisualStyleBackColor = true;
@@ -96,7 +95,6 @@
             // 
             // grpPatientDetails
             // 
-            this.grpPatientDetails.Controls.Add(this.panel1);
             this.grpPatientDetails.Controls.Add(this.lblCurrentDoshaValue);
             this.grpPatientDetails.Controls.Add(this.lblPatientBloodValue);
             this.grpPatientDetails.Controls.Add(this.lblPatientGenderValue);
@@ -110,28 +108,22 @@
             this.grpPatientDetails.Controls.Add(this.lblAge);
             this.grpPatientDetails.Controls.Add(this.lblPatientName);
             this.grpPatientDetails.Controls.Add(this.lblPatientID);
-            this.grpPatientDetails.Location = new System.Drawing.Point(358, 173);
+            this.grpPatientDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpPatientDetails.Location = new System.Drawing.Point(358, 175);
             this.grpPatientDetails.Name = "grpPatientDetails";
-            this.grpPatientDetails.Size = new System.Drawing.Size(308, 212);
+            this.grpPatientDetails.Size = new System.Drawing.Size(388, 260);
             this.grpPatientDetails.TabIndex = 4;
             this.grpPatientDetails.TabStop = false;
             this.grpPatientDetails.Text = "Patient Details                                                ";
             this.grpPatientDetails.Enter += new System.EventHandler(this.grpPatientDetails_Enter);
             this.grpPatientDetails.MouseCaptureChanged += new System.EventHandler(this.btnLoadPatient_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(10, 229);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
-            this.panel1.TabIndex = 13;
-            // 
             // lblCurrentDoshaValue
             // 
             this.lblCurrentDoshaValue.AutoSize = true;
             this.lblCurrentDoshaValue.Location = new System.Drawing.Point(124, 177);
             this.lblCurrentDoshaValue.Name = "lblCurrentDoshaValue";
-            this.lblCurrentDoshaValue.Size = new System.Drawing.Size(11, 16);
+            this.lblCurrentDoshaValue.Size = new System.Drawing.Size(16, 22);
             this.lblCurrentDoshaValue.TabIndex = 12;
             this.lblCurrentDoshaValue.Text = "-";
             // 
@@ -140,7 +132,7 @@
             this.lblPatientBloodValue.AutoSize = true;
             this.lblPatientBloodValue.Location = new System.Drawing.Point(124, 145);
             this.lblPatientBloodValue.Name = "lblPatientBloodValue";
-            this.lblPatientBloodValue.Size = new System.Drawing.Size(11, 16);
+            this.lblPatientBloodValue.Size = new System.Drawing.Size(16, 22);
             this.lblPatientBloodValue.TabIndex = 11;
             this.lblPatientBloodValue.Text = "-";
             // 
@@ -149,7 +141,7 @@
             this.lblPatientGenderValue.AutoSize = true;
             this.lblPatientGenderValue.Location = new System.Drawing.Point(124, 114);
             this.lblPatientGenderValue.Name = "lblPatientGenderValue";
-            this.lblPatientGenderValue.Size = new System.Drawing.Size(11, 16);
+            this.lblPatientGenderValue.Size = new System.Drawing.Size(16, 22);
             this.lblPatientGenderValue.TabIndex = 10;
             this.lblPatientGenderValue.Text = "-";
             // 
@@ -158,7 +150,7 @@
             this.lblPatientAgeValue.AutoSize = true;
             this.lblPatientAgeValue.Location = new System.Drawing.Point(124, 88);
             this.lblPatientAgeValue.Name = "lblPatientAgeValue";
-            this.lblPatientAgeValue.Size = new System.Drawing.Size(11, 16);
+            this.lblPatientAgeValue.Size = new System.Drawing.Size(16, 22);
             this.lblPatientAgeValue.TabIndex = 9;
             this.lblPatientAgeValue.Text = "-";
             // 
@@ -167,7 +159,7 @@
             this.lblPatientNameValue.AutoSize = true;
             this.lblPatientNameValue.Location = new System.Drawing.Point(124, 61);
             this.lblPatientNameValue.Name = "lblPatientNameValue";
-            this.lblPatientNameValue.Size = new System.Drawing.Size(11, 16);
+            this.lblPatientNameValue.Size = new System.Drawing.Size(16, 22);
             this.lblPatientNameValue.TabIndex = 8;
             this.lblPatientNameValue.Text = "-";
             // 
@@ -176,7 +168,7 @@
             this.lblPatientIDDValue.AutoSize = true;
             this.lblPatientIDDValue.Location = new System.Drawing.Point(124, 34);
             this.lblPatientIDDValue.Name = "lblPatientIDDValue";
-            this.lblPatientIDDValue.Size = new System.Drawing.Size(11, 16);
+            this.lblPatientIDDValue.Size = new System.Drawing.Size(16, 22);
             this.lblPatientIDDValue.TabIndex = 7;
             this.lblPatientIDDValue.Text = "-";
             // 
@@ -185,15 +177,16 @@
             this.lblPatientIDValue.AutoSize = true;
             this.lblPatientIDValue.Location = new System.Drawing.Point(83, 34);
             this.lblPatientIDValue.Name = "lblPatientIDValue";
-            this.lblPatientIDValue.Size = new System.Drawing.Size(0, 16);
+            this.lblPatientIDValue.Size = new System.Drawing.Size(0, 22);
             this.lblPatientIDValue.TabIndex = 6;
             // 
             // lblCurrentDosha
             // 
             this.lblCurrentDosha.AutoSize = true;
+            this.lblCurrentDosha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentDosha.Location = new System.Drawing.Point(10, 177);
             this.lblCurrentDosha.Name = "lblCurrentDosha";
-            this.lblCurrentDosha.Size = new System.Drawing.Size(98, 16);
+            this.lblCurrentDosha.Size = new System.Drawing.Size(129, 20);
             this.lblCurrentDosha.TabIndex = 5;
             this.lblCurrentDosha.Text = "Current Dosha :";
             // 
@@ -202,7 +195,7 @@
             this.lblBlood.AutoSize = true;
             this.lblBlood.Location = new System.Drawing.Point(7, 145);
             this.lblBlood.Name = "lblBlood";
-            this.lblBlood.Size = new System.Drawing.Size(89, 16);
+            this.lblBlood.Size = new System.Drawing.Size(121, 22);
             this.lblBlood.TabIndex = 4;
             this.lblBlood.Text = "Blood Group :";
             // 
@@ -211,7 +204,7 @@
             this.lblGender.AutoSize = true;
             this.lblGender.Location = new System.Drawing.Point(7, 114);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(58, 16);
+            this.lblGender.Size = new System.Drawing.Size(80, 22);
             this.lblGender.TabIndex = 3;
             this.lblGender.Text = "Gender :";
             // 
@@ -220,7 +213,7 @@
             this.lblAge.AutoSize = true;
             this.lblAge.Location = new System.Drawing.Point(7, 88);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(38, 16);
+            this.lblAge.Size = new System.Drawing.Size(52, 22);
             this.lblAge.TabIndex = 2;
             this.lblAge.Text = "Age :";
             // 
@@ -229,7 +222,7 @@
             this.lblPatientName.AutoSize = true;
             this.lblPatientName.Location = new System.Drawing.Point(7, 61);
             this.lblPatientName.Name = "lblPatientName";
-            this.lblPatientName.Size = new System.Drawing.Size(94, 16);
+            this.lblPatientName.Size = new System.Drawing.Size(128, 22);
             this.lblPatientName.TabIndex = 1;
             this.lblPatientName.Text = "Patient Name :";
             // 
@@ -238,7 +231,7 @@
             this.lblPatientID.AutoSize = true;
             this.lblPatientID.Location = new System.Drawing.Point(7, 34);
             this.lblPatientID.Name = "lblPatientID";
-            this.lblPatientID.Size = new System.Drawing.Size(70, 16);
+            this.lblPatientID.Size = new System.Drawing.Size(98, 22);
             this.lblPatientID.TabIndex = 0;
             this.lblPatientID.Text = "Patient ID :";
             this.lblPatientID.Click += new System.EventHandler(this.lblPatientID_Click);
@@ -247,9 +240,9 @@
             // 
             this.cmbPatient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPatient.FormattingEnabled = true;
-            this.cmbPatient.Location = new System.Drawing.Point(358, 128);
+            this.cmbPatient.Location = new System.Drawing.Point(486, 133);
             this.cmbPatient.Name = "cmbPatient";
-            this.cmbPatient.Size = new System.Drawing.Size(121, 24);
+            this.cmbPatient.Size = new System.Drawing.Size(170, 24);
             this.cmbPatient.TabIndex = 6;
             this.cmbPatient.MouseCaptureChanged += new System.EventHandler(this.btnLoadPatient_Click);
             // 
@@ -264,76 +257,23 @@
             this.grpQuestions.Controls.Add(this.lblQuestion);
             this.grpQuestions.Controls.Add(this.lblQuestionNo);
             this.grpQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpQuestions.Location = new System.Drawing.Point(358, 391);
+            this.grpQuestions.Location = new System.Drawing.Point(752, 352);
             this.grpQuestions.Name = "grpQuestions";
-            this.grpQuestions.Size = new System.Drawing.Size(308, 260);
+            this.grpQuestions.Size = new System.Drawing.Size(340, 280);
             this.grpQuestions.TabIndex = 7;
             this.grpQuestions.TabStop = false;
             this.grpQuestions.Text = "Dosha Questionnaire";
             // 
-            // lblQuestionNo
+            // btnFinish
             // 
-            this.lblQuestionNo.AutoSize = true;
-            this.lblQuestionNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestionNo.Location = new System.Drawing.Point(13, 33);
-            this.lblQuestionNo.Name = "lblQuestionNo";
-            this.lblQuestionNo.Size = new System.Drawing.Size(158, 22);
-            this.lblQuestionNo.TabIndex = 0;
-            this.lblQuestionNo.Text = "Question 1 of 10";
-            // 
-            // lblQuestion
-            // 
-            this.lblQuestion.AutoSize = true;
-            this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion.Location = new System.Drawing.Point(16, 73);
-            this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(215, 20);
-            this.lblQuestion.TabIndex = 1;
-            this.lblQuestion.Text = "Question appears here...";
-            // 
-            // rbOption1
-            // 
-            this.rbOption1.AutoSize = true;
-            this.rbOption1.Location = new System.Drawing.Point(17, 118);
-            this.rbOption1.Name = "rbOption1";
-            this.rbOption1.Size = new System.Drawing.Size(115, 29);
-            this.rbOption1.TabIndex = 2;
-            this.rbOption1.TabStop = true;
-            this.rbOption1.Text = "Option 1";
-            this.rbOption1.UseVisualStyleBackColor = true;
-            // 
-            // rbOption2
-            // 
-            this.rbOption2.AutoSize = true;
-            this.rbOption2.Location = new System.Drawing.Point(17, 153);
-            this.rbOption2.Name = "rbOption2";
-            this.rbOption2.Size = new System.Drawing.Size(115, 29);
-            this.rbOption2.TabIndex = 3;
-            this.rbOption2.TabStop = true;
-            this.rbOption2.Text = "Option 2";
-            this.rbOption2.UseVisualStyleBackColor = true;
-            // 
-            // rbOption3
-            // 
-            this.rbOption3.AutoSize = true;
-            this.rbOption3.Location = new System.Drawing.Point(17, 188);
-            this.rbOption3.Name = "rbOption3";
-            this.rbOption3.Size = new System.Drawing.Size(115, 29);
-            this.rbOption3.TabIndex = 4;
-            this.rbOption3.TabStop = true;
-            this.rbOption3.Text = "Option 3";
-            this.rbOption3.UseVisualStyleBackColor = true;
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.Location = new System.Drawing.Point(17, 224);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(79, 36);
-            this.btnPrevious.TabIndex = 5;
-            this.btnPrevious.Text = "Previous";
-            this.btnPrevious.UseVisualStyleBackColor = true;
-            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            this.btnFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinish.Location = new System.Drawing.Point(214, 224);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(79, 36);
+            this.btnFinish.TabIndex = 7;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // btnNext
             // 
@@ -346,20 +286,76 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // btnFinish
+            // btnPrevious
             // 
-            this.btnFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinish.Location = new System.Drawing.Point(214, 224);
-            this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(79, 36);
-            this.btnFinish.TabIndex = 7;
-            this.btnFinish.Text = "Finish";
-            this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.Location = new System.Drawing.Point(17, 224);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(79, 36);
+            this.btnPrevious.TabIndex = 5;
+            this.btnPrevious.Text = "Previous";
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // rbOption3
+            // 
+            this.rbOption3.AutoSize = true;
+            this.rbOption3.Location = new System.Drawing.Point(17, 188);
+            this.rbOption3.Name = "rbOption3";
+            this.rbOption3.Size = new System.Drawing.Size(115, 29);
+            this.rbOption3.TabIndex = 4;
+            this.rbOption3.TabStop = true;
+            this.rbOption3.Text = "Option 3";
+            this.rbOption3.UseVisualStyleBackColor = true;
+            // 
+            // rbOption2
+            // 
+            this.rbOption2.AutoSize = true;
+            this.rbOption2.Location = new System.Drawing.Point(17, 153);
+            this.rbOption2.Name = "rbOption2";
+            this.rbOption2.Size = new System.Drawing.Size(115, 29);
+            this.rbOption2.TabIndex = 3;
+            this.rbOption2.TabStop = true;
+            this.rbOption2.Text = "Option 2";
+            this.rbOption2.UseVisualStyleBackColor = true;
+            // 
+            // rbOption1
+            // 
+            this.rbOption1.AutoSize = true;
+            this.rbOption1.Location = new System.Drawing.Point(17, 118);
+            this.rbOption1.Name = "rbOption1";
+            this.rbOption1.Size = new System.Drawing.Size(115, 29);
+            this.rbOption1.TabIndex = 2;
+            this.rbOption1.TabStop = true;
+            this.rbOption1.Text = "Option 1";
+            this.rbOption1.UseVisualStyleBackColor = true;
+            // 
+            // lblQuestion
+            // 
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.Location = new System.Drawing.Point(16, 73);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(215, 20);
+            this.lblQuestion.TabIndex = 1;
+            this.lblQuestion.Text = "Question appears here...";
+            // 
+            // lblQuestionNo
+            // 
+            this.lblQuestionNo.AutoSize = true;
+            this.lblQuestionNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestionNo.Location = new System.Drawing.Point(13, 33);
+            this.lblQuestionNo.Name = "lblQuestionNo";
+            this.lblQuestionNo.Size = new System.Drawing.Size(158, 22);
+            this.lblQuestionNo.TabIndex = 0;
+            this.lblQuestionNo.Text = "Question 1 of 10";
             // 
             // StaffDoshaProfiler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::clinicManagement.Properties.Resources.dosha_bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1236, 676);
             this.Controls.Add(this.grpQuestions);
             this.Controls.Add(this.cmbPatient);
@@ -395,7 +391,6 @@
         private System.Windows.Forms.Label lblPatientIDDValue;
         private System.Windows.Forms.Label lblPatientAgeValue;
         private System.Windows.Forms.Label lblPatientNameValue;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblCurrentDoshaValue;
         private System.Windows.Forms.Label lblPatientBloodValue;
         private System.Windows.Forms.Label lblPatientGenderValue;
