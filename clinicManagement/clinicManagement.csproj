@@ -393,6 +393,9 @@
     <None Include="Resources\bg-staff-dashboard-2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\dosha-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Screenshot 2026-07-07 225940.png" />
   </ItemGroup>
   <ItemGroup>
