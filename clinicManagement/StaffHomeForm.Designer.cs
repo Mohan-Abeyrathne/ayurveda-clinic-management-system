@@ -31,9 +31,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblRemainingCount = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCompletedCount = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNewPatientsCount = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,7 +58,7 @@
             this.lblRemainingCount.BackColor = System.Drawing.Color.Transparent;
             this.lblRemainingCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRemainingCount.ForeColor = System.Drawing.Color.Black;
-            this.lblRemainingCount.Location = new System.Drawing.Point(65, 208);
+            this.lblRemainingCount.Location = new System.Drawing.Point(72, 208);
             this.lblRemainingCount.Name = "lblRemainingCount";
             this.lblRemainingCount.Size = new System.Drawing.Size(64, 69);
             this.lblRemainingCount.TabIndex = 1;
@@ -71,23 +71,24 @@
             this.panel2.BackgroundImage = global::clinicManagement.Properties.Resources.Screenshot_2026_07_07_2304391;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblCompletedCount);
             this.panel2.Location = new System.Drawing.Point(793, 95);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(217, 281);
             this.panel2.TabIndex = 1;
             // 
-            // label1
+            // lblCompletedCount
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(52, 208);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 69);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "12";
+            this.lblCompletedCount.AutoSize = true;
+            this.lblCompletedCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompletedCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompletedCount.ForeColor = System.Drawing.Color.Black;
+            this.lblCompletedCount.Location = new System.Drawing.Point(59, 208);
+            this.lblCompletedCount.Name = "lblCompletedCount";
+            this.lblCompletedCount.Size = new System.Drawing.Size(98, 69);
+            this.lblCompletedCount.TabIndex = 6;
+            this.lblCompletedCount.Text = "12";
+            this.lblCompletedCount.Click += new System.EventHandler(this.lblCompletedCount_Click);
             // 
             // panel3
             // 
@@ -95,23 +96,24 @@
             this.panel3.BackgroundImage = global::clinicManagement.Properties.Resources.Screenshot_2026_07_07_230920;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.lblNewPatientsCount);
             this.panel3.Location = new System.Drawing.Point(1058, 95);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(217, 281);
             this.panel3.TabIndex = 1;
             // 
-            // label2
+            // lblNewPatientsCount
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(76, 208);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 69);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "5";
+            this.lblNewPatientsCount.AutoSize = true;
+            this.lblNewPatientsCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewPatientsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewPatientsCount.ForeColor = System.Drawing.Color.Black;
+            this.lblNewPatientsCount.Location = new System.Drawing.Point(78, 210);
+            this.lblNewPatientsCount.Name = "lblNewPatientsCount";
+            this.lblNewPatientsCount.Size = new System.Drawing.Size(64, 69);
+            this.lblNewPatientsCount.TabIndex = 6;
+            this.lblNewPatientsCount.Text = "5";
+            this.lblNewPatientsCount.Click += new System.EventHandler(this.lblNewPatientsCount_Click);
             // 
             // btnBack
             // 
@@ -160,8 +162,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblRemainingCount;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label lblNewPatientsCount;
+        private System.Windows.Forms.Label lblCompletedCount;
     }
 }
